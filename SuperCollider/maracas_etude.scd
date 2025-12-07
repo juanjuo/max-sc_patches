@@ -1,48 +1,21 @@
 //Monday Jul 22 2024
 //Juan Diego Mora Rubio
 
-s.meter;
-s.options.numInputBusChannels = 0;
-s.options.numOutputBusChannels = 2;
-s.plotTree;
-s.options.sampleRate;
-s.volume.gui;
-
-ServerOptions.devices;
-Server.default.options.outDevice = "Volt 476P";
-Server.default.options.outDevice = "Built-in Output";
-
-//Server.default.options.outDevice = "Pathfinder 280";
-
-Server.default.options.inDevice = "Built-in Microph";
-
-Server.default.options.device = "M4";
-Server.default.options.device;
-
-
-s.options.device = "Aggregate Device";
-s.reboot;
-
-q = ServerOptions.new;
-q.sampleRate = 48000;
-q.sampleRate;
-
-
-
 //SET UP
 (
+//Speakers
+~numOfSpeakers = 2; //adjust this variable to automatically generate accompaniment to the number of speakers
+
 s.options.numInputBusChannels = 0;
-s.options.numOutputBusChannels = 2;
-Server.default.options.outDevice = "Built-in Output";
+s.options.numOutputBusChannels = ~numOfSpeakers;
+Server.default.options.outDevice = "Built-in Output"; //output device
 s.reboot;
 s.meter;
 s.plotTree;
 
-//Speakers
-~numOfSpeakers = 2;
+
 
 //Noise
-
 SynthDef.new("pulse", {
 	arg freq1   = 1, phase1  = 0  , width1 = 0.5, amp1 = 0.7,
 	    freq2   = 1, phase2  = 0.5, width2 = 0.5, amp2 = 0.7,
@@ -54,8 +27,6 @@ SynthDef.new("pulse", {
 	env = EnvGen.ar(env, doneAction: 2);
 	sig1 = BrownNoise.ar(mul: LFPulse.kr(freq1, phase1,  width1, amp1));
 	sig2 = BrownNoise.ar(mul: LFPulse.kr(freq2, phase2, width2, amp2));
-	//sig1 = HPF.ar(sig1, filter1);
-	//sig2 = HPF.ar(sig2, filter2);
 	sig1 = sig1 * env;
 	sig2 = sig2 * env;
 	~numOfSpeakers.do({
@@ -66,8 +37,7 @@ SynthDef.new("pulse", {
 }).add;
 
 
-//Synths
-
+//Chords
 SynthDef.new("chords", {
 	arg note, attack, sustain, release, amp, out;
 	var sig, env;
@@ -80,7 +50,6 @@ SynthDef.new("chords", {
 
 
 //Drone
-
 SynthDef.new("drone", {
 	arg gate = 1;
 	var sig, env, sigList;
@@ -100,7 +69,6 @@ SynthDef.new("drone", {
 
 
 //Drone2
-
 SynthDef.new("drone2", {
 	arg gate = 1;
 	var sig, env, sigList;
@@ -120,12 +88,11 @@ SynthDef.new("drone2", {
 
 
 //Randomize notes
-
 r = Routine.new({
-	c = Array.series((~numOfSpeakers), 0, 1);          //channel
+	c = Array.series((~numOfSpeakers), 0, 1);              //channel
 	inf.do({
 		x = [59, 60, 62, 64, 65, 67, 69].choose;           //notes
-		y = rrand(0.25, 2);                                //yield time
+		y = rrand(0.25, 2);                                //yield time (time between each note)
 		z = [rrand(0.5, 5), rrand(0.5, 5), rrand(0.5, 5)]; //envelope
 		j = rrand(0.01, 0.05);                             //amp
 		m = c.choose;                                      //channel
@@ -167,60 +134,13 @@ p = Routine.new({
 
 )
 
-/*
-//play drone
-~drone = Synth.new("drone");
-
-~drone.release;
-
-//play drone2
-(
-m.reset;
-m.play;
-)
-
-m.stop;
-
-~drone2 = Synth.new("drone2");
-~drone2.release;
-
-//play notes
-(
-r.reset;
-r.play;
-)
-
-p.play;
-p.stop;
-
-r.stop;
-*/
-
-
-//TO DO
-/*
-- make set up easier ✔
-- make sections longer! maybe 120 seconds each ✔
-- make noise longer! maybe 30 - 50 seconds each ✔
-- make ending automatic ✔
-- make speaker distribution algorithmically
-
-- think about how I'm shaping the piece. maybe climax should come later?
-  more intensly?
-- no breaks in the playing. sit on the texture and develop an idea
-- don't be afraid of looping! work on playing with the noises better
-- transitions could be better, try to ease into the noises
-- PLay with panning throughout the hall, quad speakers can give a lot of room for exploration
-- Think about the harmonic content, maybe change the notes? think about the bass?
-*/
-
 //PLAY
 (
 
-~sectionLength = 80;
+~sectionLength = 80; //80 seconds each section
 
 k = Routine.new({
-	~drone = Synth.new("drone"); //drone for 2 minute
+	~drone = Synth.new("drone"); //1 - Chords
 	r.reset; // notes
 	r.play;
 
@@ -230,7 +150,7 @@ k = Routine.new({
 		1.yield;
 	});
 
-	p.reset; //noise and drone for 2 minute
+	p.reset; //2- Chords and Noise
     p.play;
 
 	~sectionLength.do({
@@ -239,7 +159,7 @@ k = Routine.new({
 		1.yield;
 	});
 
-	p.stop; //just drone for 2 minute
+	p.stop; //3 - Chords
 
 	~sectionLength.do({
 		arg num;
@@ -247,7 +167,7 @@ k = Routine.new({
 		1.yield;
 	});
 
-	~drone2 = Synth.new("drone2");//bass + drone + bass drone + noise 2 minute
+	~drone2 = Synth.new("drone2");//4 - Chords and Bass and Noise
 
 	p.reset;
 	p.play;
@@ -258,7 +178,7 @@ k = Routine.new({
 		1.yield;
 	});
 
-	p.stop; //bass + drone 2 minute
+	p.stop; //5 - Chords and Bass
 
 	~sectionLength.do({
 		arg num;
@@ -273,13 +193,6 @@ k = Routine.new({
 });
 )
 
-(
-s.record();
-
-k.reset;
-k.play;
-)
-
 // STOP
 (
 p.stop;
@@ -289,10 +202,22 @@ r.stop;
 ~drone.release;
 )
 
+///////////////////////////////////////////////////////////////
+
+( // To make a recording, Start Here
+s.record();
+
+k.reset;
+k.play;
+)
+
 // Stop Recording
 (
 s.stopRecording;
 )
+
+///////////////////////////////////////////////////////////////
+
 
 //Check Speakers
 (
@@ -304,7 +229,5 @@ SynthDef.new(\check, {
 )
 
 ~checkSpeakers = Synth.new("check");
-
-
 
 {SinOsc.ar(400, mul: 0.1)}.play;
