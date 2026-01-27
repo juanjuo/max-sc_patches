@@ -62,7 +62,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 548.0, 73.0, 160.0, 87.0 ],
+					"patching_rect" : [ 548.0, 73.0, 161.0, 87.0 ],
 					"text" : "Text Visualization \nPatch"
 				}
 
@@ -3113,7 +3113,6 @@
 						"classnamespace" : "box",
 						"rect" : [ 108.0, 87.0, 1185.0, 694.0 ],
 						"gridsize" : [ 15.0, 15.0 ],
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontface" : 1,
@@ -3123,7 +3122,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 583.25, 60.0, 250.0, 60.0 ],
+									"patching_rect" : [ 538.0, 36.0, 253.0, 60.0 ],
 									"text" : "sending midi signals using contact mic"
 								}
 
@@ -3842,6 +3841,7 @@
 , 			{
 				"box" : 				{
 					"buffername" : "loopBuffer",
+					"chanoffset" : 0,
 					"id" : "obj-70",
 					"maxclass" : "waveform~",
 					"numinlets" : 5,
@@ -6799,7 +6799,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 563.0, 81.0, 281.0, 262.0 ],
-					"presentation_linecount" : 18,
 					"text" : "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
 				}
 
@@ -7768,16 +7767,6 @@
 			"obj-67" : [ "toggle[2]", "toggle[2]", 0 ],
 			"obj-82" : [ "button[26]", "button[26]", 0 ],
 			"obj-9" : [ "button[21]", "button[21]", 0 ],
-			"parameterbanks" : 			{
-				"0" : 				{
-					"index" : 0,
-					"name" : "",
-					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ],
-					"buttons" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-				}
-
-			}
-,
 			"inherited_shortname" : 1
 		}
 ,
