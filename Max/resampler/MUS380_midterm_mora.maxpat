@@ -177,7 +177,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 806.31572699546814, 856.842038869857788, 96.0, 35.0 ],
-					"text" : "0, 1 2 1 2660 0 2"
+					"text" : "0, 1 2 1 1428 0 2"
 				}
 
 			}
@@ -188,7 +188,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 806.31572699546814, 827.368356943130493, 111.0, 22.0 ],
+					"patching_rect" : [ 732.0, 799.0, 111.0, 22.0 ],
 					"text" : "set 0 \\, 1 2 1 $1 0 2"
 				}
 
@@ -258,7 +258,7 @@
 				"box" : 				{
 					"id" : "obj-106",
 					"inputs" : 6,
-					"int" : 4,
+					"int" : 2,
 					"maxclass" : "gswitch",
 					"numinlets" : 7,
 					"numoutlets" : 1,
@@ -2406,7 +2406,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1010.0, 324.0, 117.0, 22.0 ],
-					"text" : "importreplace song3"
+					"text" : "importreplace song2"
 				}
 
 			}
@@ -2668,6 +2668,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-43", 0 ],
 					"source" : [ "obj-13", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-124", 0 ],
+					"source" : [ "obj-134", 0 ]
 				}
 
 			}
@@ -3569,6 +3576,16 @@
 			"obj-96" : [ "number[19]", "number[19]", 0 ],
 			"obj-97" : [ "button[8]", "button[8]", 0 ],
 			"obj-99" : [ "number[9]", "number[9]", 0 ],
+			"parameterbanks" : 			{
+				"0" : 				{
+					"index" : 0,
+					"name" : "",
+					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+					"buttons" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+				}
+
+			}
+,
 			"inherited_shortname" : 1
 		}
 ,
