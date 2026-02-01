@@ -1,4 +1,4 @@
-;//Juan Diego Mora
+//Juan Diego Mora
 // Radio Synth server
 // Jan28 2026
 
@@ -11,8 +11,8 @@ s.options.numInputBusChannels = 0;
 s.options.numOutputBusChannels = 2;
 Server.default.options.outDevice = "Built-in Output"; //output device
 s.reboot;
-s.meter;
-s.plotTree;
+//s.meter;
+//s.plotTree;
 )
 
 s.dumpOSC(1);
@@ -45,18 +45,38 @@ SynthDef.new("wave", {
 //- Low-pass filter
 
 //UI
+
 (
 w = Window("LPF Control", Rect(200, 200, 300, 80));
-s = Slider(w, Rect(20, 20, 260, 20));
+p = Slider(w, Rect(20, 20, 260, 20));
 
-s.action = { |sl|
+p.action = { |sl|
     var freq;
     freq = sl.value.linexp(0, 1, 200, 8000);
+	"%".postf(freq);
     ~my_synth.set(\freq, freq);
 };
 
 w.front;
 )
+
+//FOR CUSTOM OSC MESSAGE PROCESSING
+(
+f = { |msg, time, addr|
+	if(msg[0] == '/amp'){ //NOTE!!: use '' or otherwise it doesn't work
+		//"%".postf(msg[1]);
+		~my_synth.set(\freq, msg[1]);
+	}
+};
+thisProcess.addOSCRecvFunc(f);
+)
+
+thisProcess.removeOSCRecvFunc(f);
+
+
+
+//create a new recvOSCmessage
+
 
 
 
