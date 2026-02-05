@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 372.0, 142.0, 1372.0, 694.0 ],
+		"rect" : [ 122.0, 120.0, 1602.0, 795.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
@@ -32,7 +32,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 953.0, 556.0, 24.0, 24.0 ]
+					"patching_rect" : [ 704.0, 565.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -42,7 +42,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 953.0, 586.0, 59.0, 22.0 ],
+					"patching_rect" : [ 704.0, 595.0, 59.0, 22.0 ],
 					"text" : "s trigger2"
 				}
 
@@ -235,7 +235,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 520.0, 572.0, 24.0, 24.0 ]
+					"patching_rect" : [ 496.0, 646.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -246,7 +246,7 @@
 					"numinlets" : 4,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 549.0, 594.0, 69.0, 22.0 ],
+					"patching_rect" : [ 525.0, 668.0, 69.0, 22.0 ],
 					"text" : "tempo 55 4"
 				}
 
@@ -269,10 +269,1178 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 59.0, 106.0, 1417.0, 793.0 ],
+						"rect" : [ 34.0, 87.0, 1372.0, 694.0 ],
 						"gridsize" : [ 15.0, 15.0 ],
 						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-15",
+									"maxclass" : "button",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 564.0, 304.0, 24.0, 24.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-4",
+									"maxclass" : "ezdac~",
+									"numinlets" : 2,
+									"numoutlets" : 0,
+									"patching_rect" : [ 936.0, 287.5, 45.0, 45.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"basictuning" : 440,
+									"clipheight" : 20.0,
+									"data" : 									{
+										"clips" : [ 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 1 [2026-02-05 102550].wav",
+												"filename" : "Slice 1 [2026-02-05 102550].wav",
+												"filekind" : "audiofile",
+												"id" : "u460001562",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 2 [2026-02-05 102602].wav",
+												"filename" : "Slice 2 [2026-02-05 102602].wav",
+												"filekind" : "audiofile",
+												"id" : "u253001463",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 3 [2026-02-05 102605].wav",
+												"filename" : "Slice 3 [2026-02-05 102605].wav",
+												"filekind" : "audiofile",
+												"id" : "u107001464",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 4 [2026-02-05 102610].wav",
+												"filename" : "Slice 4 [2026-02-05 102610].wav",
+												"filekind" : "audiofile",
+												"id" : "u108001465",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 5 [2026-02-05 102613].wav",
+												"filename" : "Slice 5 [2026-02-05 102613].wav",
+												"filekind" : "audiofile",
+												"id" : "u539001466",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 6 [2026-02-05 102615].wav",
+												"filename" : "Slice 6 [2026-02-05 102615].wav",
+												"filekind" : "audiofile",
+												"id" : "u607001467",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 7 [2026-02-05 102618].wav",
+												"filename" : "Slice 7 [2026-02-05 102618].wav",
+												"filekind" : "audiofile",
+												"id" : "u729001468",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 8 [2026-02-05 102623].wav",
+												"filename" : "Slice 8 [2026-02-05 102623].wav",
+												"filekind" : "audiofile",
+												"id" : "u399001469",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 9 [2026-02-05 102625].wav",
+												"filename" : "Slice 9 [2026-02-05 102625].wav",
+												"filekind" : "audiofile",
+												"id" : "u759001470",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 10 [2026-02-05 102627].wav",
+												"filename" : "Slice 10 [2026-02-05 102627].wav",
+												"filekind" : "audiofile",
+												"id" : "u220001471",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 11 [2026-02-05 102629].wav",
+												"filename" : "Slice 11 [2026-02-05 102629].wav",
+												"filekind" : "audiofile",
+												"id" : "u443001472",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 12 [2026-02-05 102632].wav",
+												"filename" : "Slice 12 [2026-02-05 102632].wav",
+												"filekind" : "audiofile",
+												"id" : "u831001473",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 13 [2026-02-05 102634].wav",
+												"filename" : "Slice 13 [2026-02-05 102634].wav",
+												"filekind" : "audiofile",
+												"id" : "u796001474",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 14 [2026-02-05 102638].wav",
+												"filename" : "Slice 14 [2026-02-05 102638].wav",
+												"filekind" : "audiofile",
+												"id" : "u145001475",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 15 [2026-02-05 102641].wav",
+												"filename" : "Slice 15 [2026-02-05 102641].wav",
+												"filekind" : "audiofile",
+												"id" : "u893001476",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 16 [2026-02-05 102643].wav",
+												"filename" : "Slice 16 [2026-02-05 102643].wav",
+												"filekind" : "audiofile",
+												"id" : "u844001477",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 17 [2026-02-05 102645].wav",
+												"filename" : "Slice 17 [2026-02-05 102645].wav",
+												"filekind" : "audiofile",
+												"id" : "u807001478",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 18 [2026-02-05 102647].wav",
+												"filename" : "Slice 18 [2026-02-05 102647].wav",
+												"filekind" : "audiofile",
+												"id" : "u502001479",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 19 [2026-02-05 102651].wav",
+												"filename" : "Slice 19 [2026-02-05 102651].wav",
+												"filekind" : "audiofile",
+												"id" : "u313001480",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 20 [2026-02-05 102656].wav",
+												"filename" : "Slice 20 [2026-02-05 102656].wav",
+												"filekind" : "audiofile",
+												"id" : "u218001481",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 21 [2026-02-05 102659].wav",
+												"filename" : "Slice 21 [2026-02-05 102659].wav",
+												"filekind" : "audiofile",
+												"id" : "u608001482",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 22 [2026-02-05 102701].wav",
+												"filename" : "Slice 22 [2026-02-05 102701].wav",
+												"filekind" : "audiofile",
+												"id" : "u210001483",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 23 [2026-02-05 102703].wav",
+												"filename" : "Slice 23 [2026-02-05 102703].wav",
+												"filekind" : "audiofile",
+												"id" : "u265001484",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 24 [2026-02-05 102713].wav",
+												"filename" : "Slice 24 [2026-02-05 102713].wav",
+												"filekind" : "audiofile",
+												"id" : "u222001485",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 25 [2026-02-05 102721].wav",
+												"filename" : "Slice 25 [2026-02-05 102721].wav",
+												"filekind" : "audiofile",
+												"id" : "u945001486",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 26 [2026-02-05 102726].wav",
+												"filename" : "Slice 26 [2026-02-05 102726].wav",
+												"filekind" : "audiofile",
+												"id" : "u901001487",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 27 [2026-02-05 102838].wav",
+												"filename" : "Slice 27 [2026-02-05 102838].wav",
+												"filekind" : "audiofile",
+												"id" : "u023001489",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 28 [2026-02-05 102849].wav",
+												"filename" : "Slice 28 [2026-02-05 102849].wav",
+												"filekind" : "audiofile",
+												"id" : "u715001490",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 29 [2026-02-05 102851].wav",
+												"filename" : "Slice 29 [2026-02-05 102851].wav",
+												"filekind" : "audiofile",
+												"id" : "u824001491",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 30 [2026-02-05 102857].wav",
+												"filename" : "Slice 30 [2026-02-05 102857].wav",
+												"filekind" : "audiofile",
+												"id" : "u420001492",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 31 [2026-02-05 102900].wav",
+												"filename" : "Slice 31 [2026-02-05 102900].wav",
+												"filekind" : "audiofile",
+												"id" : "u640001493",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 32 [2026-02-05 102902].wav",
+												"filename" : "Slice 32 [2026-02-05 102902].wav",
+												"filekind" : "audiofile",
+												"id" : "u901001494",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 33 [2026-02-05 102904].wav",
+												"filename" : "Slice 33 [2026-02-05 102904].wav",
+												"filekind" : "audiofile",
+												"id" : "u775001495",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 34 [2026-02-05 102906].wav",
+												"filename" : "Slice 34 [2026-02-05 102906].wav",
+												"filekind" : "audiofile",
+												"id" : "u452001496",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 35 [2026-02-05 102908].wav",
+												"filename" : "Slice 35 [2026-02-05 102908].wav",
+												"filekind" : "audiofile",
+												"id" : "u901001497",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 36 [2026-02-05 102910].wav",
+												"filename" : "Slice 36 [2026-02-05 102910].wav",
+												"filekind" : "audiofile",
+												"id" : "u834001498",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 37 [2026-02-05 102913].wav",
+												"filename" : "Slice 37 [2026-02-05 102913].wav",
+												"filekind" : "audiofile",
+												"id" : "u818001499",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 38 [2026-02-05 102915].wav",
+												"filename" : "Slice 38 [2026-02-05 102915].wav",
+												"filekind" : "audiofile",
+												"id" : "u375001500",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 39 [2026-02-05 102917].wav",
+												"filename" : "Slice 39 [2026-02-05 102917].wav",
+												"filekind" : "audiofile",
+												"id" : "u499001501",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 40 [2026-02-05 102947].wav",
+												"filename" : "Slice 40 [2026-02-05 102947].wav",
+												"filekind" : "audiofile",
+												"id" : "u651001502",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 41 [2026-02-05 102949].wav",
+												"filename" : "Slice 41 [2026-02-05 102949].wav",
+												"filekind" : "audiofile",
+												"id" : "u136001503",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 42 [2026-02-05 102952].wav",
+												"filename" : "Slice 42 [2026-02-05 102952].wav",
+												"filekind" : "audiofile",
+												"id" : "u166001504",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 43 [2026-02-05 102955].wav",
+												"filename" : "Slice 43 [2026-02-05 102955].wav",
+												"filekind" : "audiofile",
+												"id" : "u950001505",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 44 [2026-02-05 102959].wav",
+												"filename" : "Slice 44 [2026-02-05 102959].wav",
+												"filekind" : "audiofile",
+												"id" : "u852001506",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 45 [2026-02-05 103001].wav",
+												"filename" : "Slice 45 [2026-02-05 103001].wav",
+												"filekind" : "audiofile",
+												"id" : "u405001507",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 46 [2026-02-05 103004].wav",
+												"filename" : "Slice 46 [2026-02-05 103004].wav",
+												"filekind" : "audiofile",
+												"id" : "u759001508",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 47 [2026-02-05 103007].wav",
+												"filename" : "Slice 47 [2026-02-05 103007].wav",
+												"filekind" : "audiofile",
+												"id" : "u945001509",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 48 [2026-02-05 103009].wav",
+												"filename" : "Slice 48 [2026-02-05 103009].wav",
+												"filekind" : "audiofile",
+												"id" : "u651001510",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 49 [2026-02-05 103011].wav",
+												"filename" : "Slice 49 [2026-02-05 103011].wav",
+												"filekind" : "audiofile",
+												"id" : "u137001511",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 50 [2026-02-05 103013].wav",
+												"filename" : "Slice 50 [2026-02-05 103013].wav",
+												"filekind" : "audiofile",
+												"id" : "u000001512",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 51 [2026-02-05 103015].wav",
+												"filename" : "Slice 51 [2026-02-05 103015].wav",
+												"filekind" : "audiofile",
+												"id" : "u231001513",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 52 [2026-02-05 103017].wav",
+												"filename" : "Slice 52 [2026-02-05 103017].wav",
+												"filekind" : "audiofile",
+												"id" : "u533001514",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 53 [2026-02-05 103019].wav",
+												"filename" : "Slice 53 [2026-02-05 103019].wav",
+												"filekind" : "audiofile",
+												"id" : "u953001515",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 54 [2026-02-05 103021].wav",
+												"filename" : "Slice 54 [2026-02-05 103021].wav",
+												"filekind" : "audiofile",
+												"id" : "u435001516",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 55 [2026-02-05 103021].wav",
+												"filename" : "Slice 55 [2026-02-05 103021].wav",
+												"filekind" : "audiofile",
+												"id" : "u199001517",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 56 [2026-02-05 103206].wav",
+												"filename" : "Slice 56 [2026-02-05 103206].wav",
+												"filekind" : "audiofile",
+												"id" : "u132001518",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 57 [2026-02-05 103209].wav",
+												"filename" : "Slice 57 [2026-02-05 103209].wav",
+												"filekind" : "audiofile",
+												"id" : "u682001519",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 58 [2026-02-05 103212].wav",
+												"filename" : "Slice 58 [2026-02-05 103212].wav",
+												"filekind" : "audiofile",
+												"id" : "u877001520",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 59 [2026-02-05 103215].wav",
+												"filename" : "Slice 59 [2026-02-05 103215].wav",
+												"filekind" : "audiofile",
+												"id" : "u754001521",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 60 [2026-02-05 103222].wav",
+												"filename" : "Slice 60 [2026-02-05 103222].wav",
+												"filekind" : "audiofile",
+												"id" : "u456001522",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 61 [2026-02-05 103225].wav",
+												"filename" : "Slice 61 [2026-02-05 103225].wav",
+												"filekind" : "audiofile",
+												"id" : "u365001523",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 62 [2026-02-05 103227].wav",
+												"filename" : "Slice 62 [2026-02-05 103227].wav",
+												"filekind" : "audiofile",
+												"id" : "u483001524",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 63 [2026-02-05 103230].wav",
+												"filename" : "Slice 63 [2026-02-05 103230].wav",
+												"filekind" : "audiofile",
+												"id" : "u320001525",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 64 [2026-02-05 103235].wav",
+												"filename" : "Slice 64 [2026-02-05 103235].wav",
+												"filekind" : "audiofile",
+												"id" : "u063001526",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 65 [2026-02-05 103237].wav",
+												"filename" : "Slice 65 [2026-02-05 103237].wav",
+												"filekind" : "audiofile",
+												"id" : "u197001527",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 66 [2026-02-05 103240].wav",
+												"filename" : "Slice 66 [2026-02-05 103240].wav",
+												"filekind" : "audiofile",
+												"id" : "u712001528",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 67 [2026-02-05 103241].wav",
+												"filename" : "Slice 67 [2026-02-05 103241].wav",
+												"filekind" : "audiofile",
+												"id" : "u440001529",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 68 [2026-02-05 103244].wav",
+												"filename" : "Slice 68 [2026-02-05 103244].wav",
+												"filekind" : "audiofile",
+												"id" : "u841001530",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 69 [2026-02-05 103246].wav",
+												"filename" : "Slice 69 [2026-02-05 103246].wav",
+												"filekind" : "audiofile",
+												"id" : "u911001531",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 70 [2026-02-05 103248].wav",
+												"filename" : "Slice 70 [2026-02-05 103248].wav",
+												"filekind" : "audiofile",
+												"id" : "u226001532",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 71 [2026-02-05 103250].wav",
+												"filename" : "Slice 71 [2026-02-05 103250].wav",
+												"filekind" : "audiofile",
+												"id" : "u107001533",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 72 [2026-02-05 103254].wav",
+												"filename" : "Slice 72 [2026-02-05 103254].wav",
+												"filekind" : "audiofile",
+												"id" : "u939001534",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 73 [2026-02-05 103256].wav",
+												"filename" : "Slice 73 [2026-02-05 103256].wav",
+												"filekind" : "audiofile",
+												"id" : "u084001535",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 74 [2026-02-05 103258].wav",
+												"filename" : "Slice 74 [2026-02-05 103258].wav",
+												"filekind" : "audiofile",
+												"id" : "u756001536",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 75 [2026-02-05 103300].wav",
+												"filename" : "Slice 75 [2026-02-05 103300].wav",
+												"filekind" : "audiofile",
+												"id" : "u830001537",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 76 [2026-02-05 103303].wav",
+												"filename" : "Slice 76 [2026-02-05 103303].wav",
+												"filekind" : "audiofile",
+												"id" : "u316001538",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 77 [2026-02-05 103305].wav",
+												"filename" : "Slice 77 [2026-02-05 103305].wav",
+												"filekind" : "audiofile",
+												"id" : "u860001539",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 78 [2026-02-05 103307].wav",
+												"filename" : "Slice 78 [2026-02-05 103307].wav",
+												"filekind" : "audiofile",
+												"id" : "u043001540",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 79 [2026-02-05 103313].wav",
+												"filename" : "Slice 79 [2026-02-05 103313].wav",
+												"filekind" : "audiofile",
+												"id" : "u539001541",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 80 [2026-02-05 103316].wav",
+												"filename" : "Slice 80 [2026-02-05 103316].wav",
+												"filekind" : "audiofile",
+												"id" : "u018001542",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 81 [2026-02-05 103319].wav",
+												"filename" : "Slice 81 [2026-02-05 103319].wav",
+												"filekind" : "audiofile",
+												"id" : "u288001543",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 82 [2026-02-05 103321].wav",
+												"filename" : "Slice 82 [2026-02-05 103321].wav",
+												"filekind" : "audiofile",
+												"id" : "u631001544",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 83 [2026-02-05 103323].wav",
+												"filename" : "Slice 83 [2026-02-05 103323].wav",
+												"filekind" : "audiofile",
+												"id" : "u605001545",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 84 [2026-02-05 103325].wav",
+												"filename" : "Slice 84 [2026-02-05 103325].wav",
+												"filekind" : "audiofile",
+												"id" : "u796001546",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 85 [2026-02-05 103327].wav",
+												"filename" : "Slice 85 [2026-02-05 103327].wav",
+												"filekind" : "audiofile",
+												"id" : "u754001547",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 86 [2026-02-05 103329].wav",
+												"filename" : "Slice 86 [2026-02-05 103329].wav",
+												"filekind" : "audiofile",
+												"id" : "u360001548",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 87 [2026-02-05 103331].wav",
+												"filename" : "Slice 87 [2026-02-05 103331].wav",
+												"filekind" : "audiofile",
+												"id" : "u511001549",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 88 [2026-02-05 103335].wav",
+												"filename" : "Slice 88 [2026-02-05 103335].wav",
+												"filekind" : "audiofile",
+												"id" : "u194001550",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 89 [2026-02-05 103337].wav",
+												"filename" : "Slice 89 [2026-02-05 103337].wav",
+												"filekind" : "audiofile",
+												"id" : "u510001551",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 90 [2026-02-05 103339].wav",
+												"filename" : "Slice 90 [2026-02-05 103339].wav",
+												"filekind" : "audiofile",
+												"id" : "u915001552",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 91 [2026-02-05 103340].wav",
+												"filename" : "Slice 91 [2026-02-05 103340].wav",
+												"filekind" : "audiofile",
+												"id" : "u980001553",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 92 [2026-02-05 103342].wav",
+												"filename" : "Slice 92 [2026-02-05 103342].wav",
+												"filekind" : "audiofile",
+												"id" : "u826001554",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 93 [2026-02-05 103345].wav",
+												"filename" : "Slice 93 [2026-02-05 103345].wav",
+												"filekind" : "audiofile",
+												"id" : "u413001555",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 94 [2026-02-05 103350].wav",
+												"filename" : "Slice 94 [2026-02-05 103350].wav",
+												"filekind" : "audiofile",
+												"id" : "u818001556",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 95 [2026-02-05 103354].wav",
+												"filename" : "Slice 95 [2026-02-05 103354].wav",
+												"filekind" : "audiofile",
+												"id" : "u027001557",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 96 [2026-02-05 103401].wav",
+												"filename" : "Slice 96 [2026-02-05 103401].wav",
+												"filekind" : "audiofile",
+												"id" : "u868001558",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 97 [2026-02-05 103409].wav",
+												"filename" : "Slice 97 [2026-02-05 103409].wav",
+												"filekind" : "audiofile",
+												"id" : "u105001559",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 98 [2026-02-05 103412].wav",
+												"filename" : "Slice 98 [2026-02-05 103412].wav",
+												"filekind" : "audiofile",
+												"id" : "u279001560",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+, 											{
+												"absolutepath" : "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2/Slice 99 [2026-02-05 103414].wav",
+												"filename" : "Slice 99 [2026-02-05 103414].wav",
+												"filekind" : "audiofile",
+												"id" : "u133001561",
+												"loop" : 1,
+												"content_state" : 												{
+													"loop" : 1
+												}
+
+											}
+ ]
+									}
+,
+									"followglobaltempo" : 0,
+									"formantcorrection" : 0,
+									"id" : "obj-2",
+									"maxclass" : "playlist~",
+									"mode" : "basic",
+									"numinlets" : 1,
+									"numoutlets" : 5,
+									"originallength" : [ 0.0, "ticks" ],
+									"originaltempo" : 120.0,
+									"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 504.0, 400.0, 259.0, 108.0 ],
+									"pitchcorrection" : 0,
+									"quality" : "basic",
+									"saved_attribute_attributes" : 									{
+										"candicane2" : 										{
+											"expression" : ""
+										}
+,
+										"candicane3" : 										{
+											"expression" : ""
+										}
+,
+										"candicane4" : 										{
+											"expression" : ""
+										}
+,
+										"candicane5" : 										{
+											"expression" : ""
+										}
+,
+										"candicane6" : 										{
+											"expression" : ""
+										}
+,
+										"candicane7" : 										{
+											"expression" : ""
+										}
+,
+										"candicane8" : 										{
+											"expression" : ""
+										}
+
+									}
+,
+									"timestretch" : [ 0 ]
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-16",
 									"maxclass" : "number",
@@ -329,7 +1497,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 573.0, 542.0, 30.0, 30.0 ]
+									"patching_rect" : [ 564.0, 538.400008022785187, 30.0, 30.0 ]
 								}
 
 							}
@@ -352,7 +1520,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 582.400008678436279, 250.400003731250763, 43.0, 22.0 ],
+									"patching_rect" : [ 564.0, 277.0, 43.0, 22.0 ],
 									"text" : "r reset"
 								}
 
@@ -377,7 +1545,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 616.000009179115295, 355.200005292892456, 50.0, 22.0 ],
-									"text" : "50"
+									"text" : "9"
 								}
 
 							}
@@ -1489,7 +2657,7 @@
 									"originaltempo" : 120.0,
 									"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 504.000007510185242, 403.200006008148193, 295.200004398822784, 92.800001382827759 ],
+									"patching_rect" : [ 914.0, 154.0, 295.200004398822784, 92.800001382827759 ],
 									"pitchcorrection" : 0,
 									"quality" : "basic",
 									"saved_attribute_attributes" : 									{
@@ -1525,18 +2693,6 @@
 ,
 									"style" : "default",
 									"timestretch" : [ 0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-10",
-									"maxclass" : "button",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "bang" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 575.0, 298.0, 24.0, 24.0 ]
 								}
 
 							}
@@ -1599,29 +2755,29 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-6", 2 ],
-									"source" : [ "obj-10", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-22", 0 ],
-									"source" : [ "obj-11", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-23", 0 ],
+									"destination" : [ "obj-4", 1 ],
 									"source" : [ "obj-11", 1 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-11", 0 ],
+									"destination" : [ "obj-4", 0 ],
+									"source" : [ "obj-11", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-2", 0 ],
 									"source" : [ "obj-13", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-6", 2 ],
+									"source" : [ "obj-15", 0 ]
 								}
 
 							}
@@ -1634,7 +2790,21 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-10", 0 ],
+									"destination" : [ "obj-22", 0 ],
+									"source" : [ "obj-2", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-23", 0 ],
+									"source" : [ "obj-2", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-15", 0 ],
 									"source" : [ "obj-21", 0 ]
 								}
 
@@ -1648,16 +2818,16 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-11", 0 ],
-									"order" : 1,
+									"destination" : [ "obj-13", 1 ],
+									"order" : 0,
 									"source" : [ "obj-6", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-13", 1 ],
-									"order" : 0,
+									"destination" : [ "obj-2", 0 ],
+									"order" : 1,
 									"source" : [ "obj-6", 0 ]
 								}
 
@@ -1790,7 +2960,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 714.0, 577.0, 52.0, 22.0 ],
+					"patching_rect" : [ 690.0, 651.0, 52.0, 22.0 ],
 					"text" : "s trigger"
 				}
 
@@ -4259,7 +5429,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 495.0, 361.0, 52.0, 22.0 ],
-					"text" : "thresh 5"
+					"text" : "thresh 1"
 				}
 
 			}
@@ -4469,6 +5639,7 @@
 						"classnamespace" : "box",
 						"rect" : [ 59.0, 106.0, 1000.0, 659.0 ],
 						"gridsize" : [ 15.0, 15.0 ],
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-3",
@@ -4549,7 +5720,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 144.0, 271.0, 130.0, 22.0 ],
-									"text" : "if ($f1 > 0.4) then bang"
+									"text" : "if ($f1 > 0.2) then bang"
 								}
 
 							}
@@ -5442,13 +6613,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
-					"source" : [ "obj-15", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-17", 0 ],
 					"source" : [ "obj-16", 0 ]
 				}
@@ -5790,7 +6954,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
+					"destination" : [ "obj-60", 0 ],
 					"source" : [ "obj-9", 0 ]
 				}
 
@@ -5840,16 +7004,6 @@
 			"obj-59" : [ "live.gain~", "live.gain~", 0 ],
 			"obj-8" : [ "button[4]", "button[3]", 0 ],
 			"obj-97" : [ "button[14]", "button[8]", 0 ],
-			"parameterbanks" : 			{
-				"0" : 				{
-					"index" : 0,
-					"name" : "",
-					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ],
-					"buttons" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-				}
-
-			}
-,
 			"inherited_shortname" : 1
 		}
 ,
@@ -5861,9 +7015,23 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "Slice 1 [2026-02-05 102550].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Slice 10 [2026-02-03 111125].wav",
 				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin/cropped_chopin",
 				"patcherrelativepath" : "./cropped_chopin/cropped_chopin",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Slice 10 [2026-02-05 102627].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
@@ -5882,9 +7050,23 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "Slice 11 [2026-02-05 102629].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Slice 12 [2026-02-03 111131].wav",
 				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin/cropped_chopin",
 				"patcherrelativepath" : "./cropped_chopin/cropped_chopin",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Slice 12 [2026-02-05 102632].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
@@ -5896,9 +7078,23 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "Slice 13 [2026-02-05 102634].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Slice 14 [2026-02-03 111137].wav",
 				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin/cropped_chopin",
 				"patcherrelativepath" : "./cropped_chopin/cropped_chopin",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Slice 14 [2026-02-05 102638].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
@@ -5910,9 +7106,23 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "Slice 15 [2026-02-05 102641].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Slice 16 [2026-02-03 111143].wav",
 				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin/cropped_chopin",
 				"patcherrelativepath" : "./cropped_chopin/cropped_chopin",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Slice 16 [2026-02-05 102643].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
@@ -5924,9 +7134,23 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "Slice 17 [2026-02-05 102645].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Slice 18 [2026-02-03 111149].wav",
 				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin/cropped_chopin",
 				"patcherrelativepath" : "./cropped_chopin/cropped_chopin",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Slice 18 [2026-02-05 102647].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
@@ -5938,9 +7162,23 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "Slice 19 [2026-02-05 102651].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Slice 2 [2026-02-03 110218].wav",
 				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin/cropped_chopin",
 				"patcherrelativepath" : "./cropped_chopin/cropped_chopin",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Slice 2 [2026-02-05 102602].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
@@ -5952,9 +7190,23 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "Slice 20 [2026-02-05 102656].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Slice 21 [2026-02-03 111332].wav",
 				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin/cropped_chopin",
 				"patcherrelativepath" : "./cropped_chopin/cropped_chopin",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Slice 21 [2026-02-05 102659].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
@@ -5966,9 +7218,23 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "Slice 22 [2026-02-05 102701].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Slice 23 [2026-02-03 111338].wav",
 				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin/cropped_chopin",
 				"patcherrelativepath" : "./cropped_chopin/cropped_chopin",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Slice 23 [2026-02-05 102703].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
@@ -5980,9 +7246,23 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "Slice 24 [2026-02-05 102713].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Slice 25 [2026-02-03 111343].wav",
 				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin/cropped_chopin",
 				"patcherrelativepath" : "./cropped_chopin/cropped_chopin",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Slice 25 [2026-02-05 102721].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
@@ -5994,9 +7274,30 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "Slice 26 [2026-02-05 102726].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Slice 27 [2026-02-05 102838].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Slice 28 [2026-02-03 111355].wav",
 				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin/cropped_chopin",
 				"patcherrelativepath" : "./cropped_chopin/cropped_chopin",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Slice 28 [2026-02-05 102849].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
@@ -6008,9 +7309,23 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "Slice 29 [2026-02-05 102851].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Slice 3 [2026-02-03 110231].wav",
 				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin/cropped_chopin",
 				"patcherrelativepath" : "./cropped_chopin/cropped_chopin",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Slice 3 [2026-02-05 102605].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
@@ -6022,9 +7337,23 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "Slice 30 [2026-02-05 102857].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Slice 31 [2026-02-03 111407].wav",
 				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin/cropped_chopin",
 				"patcherrelativepath" : "./cropped_chopin/cropped_chopin",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Slice 31 [2026-02-05 102900].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
@@ -6036,9 +7365,23 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "Slice 32 [2026-02-05 102902].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Slice 33 [2026-02-03 111414].wav",
 				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin/cropped_chopin",
 				"patcherrelativepath" : "./cropped_chopin/cropped_chopin",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Slice 33 [2026-02-05 102904].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
@@ -6050,9 +7393,23 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "Slice 34 [2026-02-05 102906].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Slice 35 [2026-02-03 111420].wav",
 				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin/cropped_chopin",
 				"patcherrelativepath" : "./cropped_chopin/cropped_chopin",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Slice 35 [2026-02-05 102908].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
@@ -6064,9 +7421,23 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "Slice 36 [2026-02-05 102910].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Slice 37 [2026-02-03 111427].wav",
 				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin/cropped_chopin",
 				"patcherrelativepath" : "./cropped_chopin/cropped_chopin",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Slice 37 [2026-02-05 102913].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
@@ -6078,9 +7449,23 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "Slice 38 [2026-02-05 102915].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Slice 39 [2026-02-03 111433].wav",
 				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin/cropped_chopin",
 				"patcherrelativepath" : "./cropped_chopin/cropped_chopin",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Slice 39 [2026-02-05 102917].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
@@ -6092,9 +7477,23 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "Slice 4 [2026-02-05 102610].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Slice 40 [2026-02-03 111436].wav",
 				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin/cropped_chopin",
 				"patcherrelativepath" : "./cropped_chopin/cropped_chopin",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Slice 40 [2026-02-05 102947].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
@@ -6106,9 +7505,23 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "Slice 41 [2026-02-05 102949].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Slice 42 [2026-02-03 111453].wav",
 				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin/cropped_chopin",
 				"patcherrelativepath" : "./cropped_chopin/cropped_chopin",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Slice 42 [2026-02-05 102952].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
@@ -6120,9 +7533,23 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "Slice 43 [2026-02-05 102955].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Slice 44 [2026-02-03 111459].wav",
 				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin/cropped_chopin",
 				"patcherrelativepath" : "./cropped_chopin/cropped_chopin",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Slice 44 [2026-02-05 102959].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
@@ -6134,9 +7561,23 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "Slice 45 [2026-02-05 103001].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Slice 46 [2026-02-03 111504].wav",
 				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin/cropped_chopin",
 				"patcherrelativepath" : "./cropped_chopin/cropped_chopin",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Slice 46 [2026-02-05 103004].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
@@ -6148,9 +7589,23 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "Slice 47 [2026-02-05 103007].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Slice 48 [2026-02-03 111512].wav",
 				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin/cropped_chopin",
 				"patcherrelativepath" : "./cropped_chopin/cropped_chopin",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Slice 48 [2026-02-05 103009].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
@@ -6162,9 +7617,23 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "Slice 49 [2026-02-05 103011].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Slice 5 [2026-02-03 110419].wav",
 				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin/cropped_chopin",
 				"patcherrelativepath" : "./cropped_chopin/cropped_chopin",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Slice 5 [2026-02-05 102613].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
@@ -6176,9 +7645,23 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "Slice 50 [2026-02-05 103013].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Slice 51 [2026-02-03 111521].wav",
 				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin/cropped_chopin",
 				"patcherrelativepath" : "./cropped_chopin/cropped_chopin",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Slice 51 [2026-02-05 103015].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
@@ -6190,9 +7673,23 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "Slice 52 [2026-02-05 103017].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Slice 53 [2026-02-03 111526].wav",
 				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin/cropped_chopin",
 				"patcherrelativepath" : "./cropped_chopin/cropped_chopin",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Slice 53 [2026-02-05 103019].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
@@ -6204,9 +7701,23 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "Slice 54 [2026-02-05 103021].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Slice 55 [2026-02-03 111532].wav",
 				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin/cropped_chopin",
 				"patcherrelativepath" : "./cropped_chopin/cropped_chopin",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Slice 55 [2026-02-05 103021].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
@@ -6218,9 +7729,23 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "Slice 56 [2026-02-05 103206].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Slice 57 [2026-02-03 111539].wav",
 				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin/cropped_chopin",
 				"patcherrelativepath" : "./cropped_chopin/cropped_chopin",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Slice 57 [2026-02-05 103209].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
@@ -6232,9 +7757,23 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "Slice 58 [2026-02-05 103212].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Slice 59 [2026-02-03 111547].wav",
 				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin/cropped_chopin",
 				"patcherrelativepath" : "./cropped_chopin/cropped_chopin",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Slice 59 [2026-02-05 103215].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
@@ -6246,9 +7785,23 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "Slice 6 [2026-02-05 102615].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Slice 60 [2026-02-03 111549].wav",
 				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin/cropped_chopin",
 				"patcherrelativepath" : "./cropped_chopin/cropped_chopin",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Slice 60 [2026-02-05 103222].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
@@ -6260,9 +7813,23 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "Slice 61 [2026-02-05 103225].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Slice 62 [2026-02-03 111555].wav",
 				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin/cropped_chopin",
 				"patcherrelativepath" : "./cropped_chopin/cropped_chopin",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Slice 62 [2026-02-05 103227].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
@@ -6274,9 +7841,23 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "Slice 63 [2026-02-05 103230].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Slice 64 [2026-02-03 111600].wav",
 				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin/cropped_chopin",
 				"patcherrelativepath" : "./cropped_chopin/cropped_chopin",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Slice 64 [2026-02-05 103235].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
@@ -6288,9 +7869,23 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "Slice 65 [2026-02-05 103237].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Slice 66 [2026-02-03 111606].wav",
 				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin/cropped_chopin",
 				"patcherrelativepath" : "./cropped_chopin/cropped_chopin",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Slice 66 [2026-02-05 103240].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
@@ -6302,9 +7897,23 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "Slice 67 [2026-02-05 103241].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Slice 68 [2026-02-03 111613].wav",
 				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin/cropped_chopin",
 				"patcherrelativepath" : "./cropped_chopin/cropped_chopin",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Slice 68 [2026-02-05 103244].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
@@ -6316,9 +7925,23 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "Slice 69 [2026-02-05 103246].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Slice 7 [2026-02-03 110436].wav",
 				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin/cropped_chopin",
 				"patcherrelativepath" : "./cropped_chopin/cropped_chopin",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Slice 7 [2026-02-05 102618].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
@@ -6330,9 +7953,23 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "Slice 70 [2026-02-05 103248].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Slice 71 [2026-02-03 111623].wav",
 				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin/cropped_chopin",
 				"patcherrelativepath" : "./cropped_chopin/cropped_chopin",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Slice 71 [2026-02-05 103250].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
@@ -6344,9 +7981,23 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "Slice 72 [2026-02-05 103254].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Slice 73 [2026-02-03 111634].wav",
 				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin/cropped_chopin",
 				"patcherrelativepath" : "./cropped_chopin/cropped_chopin",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Slice 73 [2026-02-05 103256].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
@@ -6358,9 +8009,23 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "Slice 74 [2026-02-05 103258].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Slice 75 [2026-02-03 111638].wav",
 				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin/cropped_chopin",
 				"patcherrelativepath" : "./cropped_chopin/cropped_chopin",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Slice 75 [2026-02-05 103300].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
@@ -6372,9 +8037,23 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "Slice 76 [2026-02-05 103303].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Slice 77 [2026-02-03 111644].wav",
 				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin/cropped_chopin",
 				"patcherrelativepath" : "./cropped_chopin/cropped_chopin",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Slice 77 [2026-02-05 103305].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
@@ -6386,9 +8065,23 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "Slice 78 [2026-02-05 103307].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Slice 79 [2026-02-03 111652].wav",
 				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin/cropped_chopin",
 				"patcherrelativepath" : "./cropped_chopin/cropped_chopin",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Slice 79 [2026-02-05 103313].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
@@ -6400,9 +8093,23 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "Slice 8 [2026-02-05 102623].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Slice 80 [2026-02-03 111655].wav",
 				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin/cropped_chopin",
 				"patcherrelativepath" : "./cropped_chopin/cropped_chopin",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Slice 80 [2026-02-05 103316].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
@@ -6414,9 +8121,23 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "Slice 81 [2026-02-05 103319].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Slice 82 [2026-02-03 111700].wav",
 				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin/cropped_chopin",
 				"patcherrelativepath" : "./cropped_chopin/cropped_chopin",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Slice 82 [2026-02-05 103321].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
@@ -6428,9 +8149,23 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "Slice 83 [2026-02-05 103323].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Slice 84 [2026-02-03 111704].wav",
 				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin/cropped_chopin",
 				"patcherrelativepath" : "./cropped_chopin/cropped_chopin",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Slice 84 [2026-02-05 103325].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
@@ -6442,9 +8177,23 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "Slice 85 [2026-02-05 103327].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Slice 86 [2026-02-03 111710].wav",
 				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin/cropped_chopin",
 				"patcherrelativepath" : "./cropped_chopin/cropped_chopin",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Slice 86 [2026-02-05 103329].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
@@ -6456,9 +8205,23 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "Slice 87 [2026-02-05 103331].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Slice 88 [2026-02-03 111715].wav",
 				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin/cropped_chopin",
 				"patcherrelativepath" : "./cropped_chopin/cropped_chopin",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Slice 88 [2026-02-05 103335].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
@@ -6470,9 +8233,23 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "Slice 89 [2026-02-05 103337].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Slice 9 [2026-02-03 110457].wav",
 				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin/cropped_chopin",
 				"patcherrelativepath" : "./cropped_chopin/cropped_chopin",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Slice 9 [2026-02-05 102625].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
@@ -6484,9 +8261,23 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "Slice 90 [2026-02-05 103339].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Slice 91 [2026-02-03 111727].wav",
 				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin/cropped_chopin",
 				"patcherrelativepath" : "./cropped_chopin/cropped_chopin",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Slice 91 [2026-02-05 103340].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
@@ -6498,9 +8289,23 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "Slice 92 [2026-02-05 103342].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Slice 93 [2026-02-03 111733].wav",
 				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin/cropped_chopin",
 				"patcherrelativepath" : "./cropped_chopin/cropped_chopin",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Slice 93 [2026-02-05 103345].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
@@ -6512,9 +8317,23 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "Slice 94 [2026-02-05 103350].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Slice 95 [2026-02-03 111738].wav",
 				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin/cropped_chopin",
 				"patcherrelativepath" : "./cropped_chopin/cropped_chopin",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Slice 95 [2026-02-05 103354].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
@@ -6526,9 +8345,23 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "Slice 96 [2026-02-05 103401].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Slice 97 [2026-02-03 111743].wav",
 				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin/cropped_chopin",
 				"patcherrelativepath" : "./cropped_chopin/cropped_chopin",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Slice 97 [2026-02-05 103409].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
@@ -6540,9 +8373,23 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "Slice 98 [2026-02-05 103412].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Slice 99 [2026-02-03 111749].wav",
 				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin/cropped_chopin",
 				"patcherrelativepath" : "./cropped_chopin/cropped_chopin",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Slice 99 [2026-02-05 103414].wav",
+				"bootpath" : "~/Desktop/Max-Sc/Max/drumset_piece/cropped_chopin_2",
+				"patcherrelativepath" : "./cropped_chopin_2",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
