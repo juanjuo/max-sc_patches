@@ -23,6 +23,7 @@ OSCFunc.trace(false);
 
 OSCFunc.trace(true, true);
 
+
 (
 
 SynthDef.new("wave", {
@@ -38,7 +39,7 @@ SynthDef.new("wave", {
 
 ~my_synth = Synth.new("wave");
 
-
+NetAddr.localAddr;
 
 //CONTROL
 

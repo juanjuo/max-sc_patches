@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 9,
 			"minor" : 0,
-			"revision" : 9,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 312.0, 177.0, 765.0, 493.0 ],
+		"rect" : [ 312.0, 177.0, 1169.0, 727.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
@@ -20,8 +20,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 691.0, 556.0, 50.0, 35.0 ],
-					"text" : "/amp 451"
+					"patching_rect" : [ 691.0, 556.0, 50.0, 36.0 ],
+					"text" : "/amp 2420"
 				}
 
 			}
@@ -33,7 +33,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 644.0, 473.0, 73.0, 22.0 ],
-					"text" : "/amp 829"
+					"text" : "/amp 2540"
 				}
 
 			}
@@ -67,8 +67,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 436.0, 539.0, 145.0, 22.0 ],
-					"text" : "udpsend 127.0.0.1 57120"
+					"patching_rect" : [ 436.0, 539.0, 165.0, 22.0 ],
+					"text" : "udpsend 192.168.5.26 57120"
 				}
 
 			}
@@ -104,7 +104,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 614.0, 348.0, 50.0, 22.0 ],
-					"text" : "829"
+					"text" : "2540"
 				}
 
 			}
@@ -116,7 +116,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 491.0, 181.0, 20.0, 140.0 ],
+					"patching_rect" : [ 491.0, 193.0, 20.0, 140.0 ],
 					"size" : 7800.0
 				}
 
