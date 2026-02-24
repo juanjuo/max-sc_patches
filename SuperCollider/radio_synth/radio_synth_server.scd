@@ -15,14 +15,12 @@ s.reboot;
 //s.plotTree;
 )
 
-s.dumpOSC(1);
-OSCFunc.trace(false);
+// networking
 
-
-//- Sine Wave setup
-
+NetAddr.localAddr;
 OSCFunc.trace(true, true);
 
+//- Sine Wave setup
 
 (
 
@@ -39,7 +37,7 @@ SynthDef.new("wave", {
 
 ~my_synth = Synth.new("wave");
 
-NetAddr.localAddr;
+
 
 //CONTROL
 
