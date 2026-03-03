@@ -14,6 +14,30 @@
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-18",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 978.0, 489.0, 34.0, 22.0 ],
+					"text" : "write"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "bang", "int" ],
+					"patching_rect" : [ 949.0, 539.0, 71.0, 22.0 ],
+					"text" : "text data.txt"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-8",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -26,11 +50,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-7",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 819.0, 457.0, 50.0, 22.0 ]
+					"patching_rect" : [ 819.0, 457.0, 50.0, 36.0 ],
+					"text" : "/test DOWN"
 				}
 
 			}
@@ -41,8 +67,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 823.0, 391.0, 67.0, 22.0 ],
-					"text" : "udpreceive"
+					"patching_rect" : [ 874.0, 354.0, 104.0, 22.0 ],
+					"text" : "udpreceive 57120"
 				}
 
 			}
@@ -55,7 +81,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 691.0, 556.0, 50.0, 36.0 ],
-					"text" : "/amp 3859"
+					"text" : "/amp 5367"
 				}
 
 			}
@@ -67,7 +93,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 644.0, 473.0, 73.0, 22.0 ],
-					"text" : "/amp 3799"
+					"text" : "/amp 5427"
 				}
 
 			}
@@ -138,7 +164,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 614.0, 348.0, 50.0, 22.0 ],
-					"text" : "3799"
+					"text" : "5427"
 				}
 
 			}
@@ -167,6 +193,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
 					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-13", 0 ],
+					"source" : [ "obj-18", 0 ]
 				}
 
 			}
