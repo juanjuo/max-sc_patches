@@ -42,7 +42,7 @@ void setup() {
    * and the port of the remote location address are the same, hence you will
    * send messages back to this sketch.
    */
-  myRemoteLocation = new NetAddress("192.168.4.32", 12000);
+  myRemoteLocation = new NetAddress("10.10.48.49", 12000);
 }
 
 void draw() {

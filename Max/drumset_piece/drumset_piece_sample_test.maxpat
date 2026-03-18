@@ -4,7 +4,7 @@
         "appversion": {
             "major": 9,
             "minor": 1,
-            "revision": 2,
+            "revision": 3,
             "architecture": "x64",
             "modernui": 1
         },
@@ -13,29 +13,85 @@
         "boxes": [
             {
                 "box": {
-                    "id": "obj-146",
+                    "id": "obj-157",
                     "maxclass": "message",
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 1716.0, 932.5, 29.5, 22.0 ],
-                    "text": "100"
+                    "patching_rect": [ 1434.0, 946.0, 29.5, 22.0 ],
+                    "text": "2"
                 }
             },
             {
                 "box": {
-                    "id": "obj-143",
+                    "id": "obj-155",
                     "maxclass": "newobj",
                     "numinlets": 0,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 1716.0, 901.0, 67.0, 22.0 ],
+                    "patching_rect": [ 1434.0, 916.0, 67.0, 22.0 ],
+                    "text": "r section_3"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-154",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 1655.0, 1150.0, 29.5, 22.0 ],
+                    "text": "0"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-152",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 1655.0, 1119.0, 43.0, 22.0 ],
+                    "text": "r reset"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-151",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 1700.0, 1150.0, 29.5, 22.0 ],
+                    "text": "1"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-149",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 1700.0, 1119.0, 67.0, 22.0 ],
+                    "text": "r section_3"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-135",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 571.0, 712.0, 67.0, 22.0 ],
                     "text": "r section_3"
                 }
             },
             {
                 "box": {
                     "id": "obj-137",
+                    "int": 1,
                     "maxclass": "gswitch2",
                     "numinlets": 2,
                     "numoutlets": 2,
@@ -160,35 +216,13 @@
             },
             {
                 "box": {
-                    "id": "obj-144",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 2,
-                    "outlettype": [ "bang", "bang" ],
-                    "patching_rect": [ 1964.0, 1159.0, 32.0, 22.0 ],
-                    "text": "t b b"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-141",
-                    "maxclass": "message",
-                    "numinlets": 2,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 2092.0, 1037.0, 29.5, 22.0 ],
-                    "text": "1"
-                }
-            },
-            {
-                "box": {
                     "id": "obj-136",
                     "maxclass": "toggle",
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "int" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 2334.0, 1084.0, 24.0, 24.0 ]
+                    "patching_rect": [ 2138.0, 632.0, 24.0, 24.0 ]
                 }
             },
             {
@@ -198,7 +232,7 @@
                     "numinlets": 0,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 2334.0, 1037.0, 67.0, 22.0 ],
+                    "patching_rect": [ 2138.0, 585.0, 67.0, 22.0 ],
                     "text": "r section_3"
                 }
             },
@@ -208,30 +242,8 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 1977.0, 1195.0, 69.0, 22.0 ],
+                    "patching_rect": [ 1964.0, 1052.0, 69.0, 22.0 ],
                     "text": "s section_3"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-131",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 1964.0, 1010.0, 118.0, 22.0 ],
-                    "text": "if $i1 < 60 then bang"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-130",
-                    "maxclass": "gswitch2",
-                    "numinlets": 2,
-                    "numoutlets": 2,
-                    "outlettype": [ "", "" ],
-                    "parameter_enable": 0,
-                    "patching_rect": [ 1944.0, 1120.0, 39.0, 32.0 ]
                 }
             },
             {
@@ -242,7 +254,7 @@
                     "numoutlets": 2,
                     "outlettype": [ "", "bang" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 2259.0, 1029.0, 50.0, 22.0 ]
+                    "patching_rect": [ 2063.0, 577.0, 50.0, 22.0 ]
                 }
             },
             {
@@ -252,7 +264,7 @@
                     "numinlets": 0,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 2259.0, 999.0, 43.0, 22.0 ],
+                    "patching_rect": [ 2063.0, 547.0, 43.0, 22.0 ],
                     "text": "r reset"
                 }
             },
@@ -276,7 +288,7 @@
                     "numoutlets": 2,
                     "outlettype": [ "", "bang" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 1780.0, 1212.0, 50.0, 22.0 ]
+                    "patching_rect": [ 1787.0, 1158.0, 50.0, 22.0 ]
                 }
             },
             {
@@ -307,7 +319,7 @@
                     "numinlets": 6,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 1778.0, 1179.0, 97.0, 22.0 ],
+                    "patching_rect": [ 1785.0, 1125.0, 97.0, 22.0 ],
                     "text": "scale 0 100 -7. 2"
                 }
             },
@@ -383,7 +395,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 2092.0, 1010.0, 118.0, 22.0 ],
+                    "patching_rect": [ 1964.0, 1018.0, 118.0, 22.0 ],
                     "text": "if $i1 > 90 then bang"
                 }
             },
@@ -484,7 +496,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 1778.0, 1024.0, 20.0, 140.0 ],
+                    "patching_rect": [ 1785.0, 970.0, 20.0, 140.0 ],
                     "size": 100.0
                 }
             },
@@ -948,7 +960,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 473.0, 734.0, 89.0, 22.0 ],
+                    "patching_rect": [ 404.0, 735.0, 89.0, 22.0 ],
                     "text": "loadmess set 1"
                 }
             },
@@ -960,7 +972,7 @@
                     "numoutlets": 2,
                     "outlettype": [ "", "bang" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 571.0, 739.0, 50.0, 22.0 ]
+                    "patching_rect": [ 502.0, 740.0, 50.0, 22.0 ]
                 }
             },
             {
@@ -994,7 +1006,7 @@
                     "numinlets": 0,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 571.0, 711.0, 67.0, 22.0 ],
+                    "patching_rect": [ 502.0, 712.0, 67.0, 22.0 ],
                     "text": "r section_2"
                 }
             },
@@ -1032,13 +1044,12 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 2,
+                            "revision": 3,
                             "architecture": "x64",
                             "modernui": 1
                         },
                         "classnamespace": "box",
                         "rect": [ 126.0, 87.0, 1263.0, 694.0 ],
-                        "visible": 1,
                         "boxes": [
                             {
                                 "box": {
@@ -1058,150 +1069,6 @@
                                     "numoutlets": 0,
                                     "patching_rect": [ 1328.0, 994.5, 56.0, 20.0 ],
                                     "text": "center"
-                                }
-                            },
-                            {
-                                "box": {
-                                    "id": "obj-66",
-                                    "maxclass": "newobj",
-                                    "numinlets": 0,
-                                    "numoutlets": 1,
-                                    "outlettype": [ "" ],
-                                    "patching_rect": [ 1790.0, 547.0, 67.0, 22.0 ],
-                                    "text": "r section_3"
-                                }
-                            },
-                            {
-                                "box": {
-                                    "id": "obj-56",
-                                    "maxclass": "newobj",
-                                    "numinlets": 1,
-                                    "numoutlets": 2,
-                                    "outlettype": [ "bang", "bang" ],
-                                    "patching_rect": [ 1810.0, 734.0, 32.0, 22.0 ],
-                                    "text": "t b b"
-                                }
-                            },
-                            {
-                                "box": {
-                                    "id": "obj-45",
-                                    "maxclass": "message",
-                                    "numinlets": 2,
-                                    "numoutlets": 1,
-                                    "outlettype": [ "" ],
-                                    "patching_rect": [ 1754.0, 773.0, 32.0, 22.0 ],
-                                    "text": "path"
-                                }
-                            },
-                            {
-                                "box": {
-                                    "id": "obj-12",
-                                    "maxclass": "newobj",
-                                    "numinlets": 1,
-                                    "numoutlets": 1,
-                                    "outlettype": [ "bang" ],
-                                    "patching_rect": [ 1810.0, 703.0, 58.0, 22.0 ],
-                                    "text": "loadbang"
-                                }
-                            },
-                            {
-                                "box": {
-                                    "id": "obj-94",
-                                    "maxclass": "message",
-                                    "numinlets": 2,
-                                    "numoutlets": 1,
-                                    "outlettype": [ "" ],
-                                    "patching_rect": [ 1649.0, 854.0, 29.5, 22.0 ],
-                                    "text": "1"
-                                }
-                            },
-                            {
-                                "box": {
-                                    "id": "obj-63",
-                                    "maxclass": "newobj",
-                                    "numinlets": 1,
-                                    "numoutlets": 1,
-                                    "outlettype": [ "" ],
-                                    "patching_rect": [ 1754.0, 862.0, 83.0, 22.0 ],
-                                    "text": "prepend open"
-                                }
-                            },
-                            {
-                                "box": {
-                                    "id": "obj-60",
-                                    "maxclass": "message",
-                                    "numinlets": 2,
-                                    "numoutlets": 1,
-                                    "outlettype": [ "" ],
-                                    "patching_rect": [ 1877.0, 801.0, 143.0, 22.0 ],
-                                    "text": "freedom_for_oneself.wav"
-                                }
-                            },
-                            {
-                                "box": {
-                                    "id": "obj-54",
-                                    "maxclass": "newobj",
-                                    "numinlets": 2,
-                                    "numoutlets": 2,
-                                    "outlettype": [ "", "" ],
-                                    "patching_rect": [ 1754.0, 830.0, 99.0, 22.0 ],
-                                    "text": "combine path file"
-                                }
-                            },
-                            {
-                                "box": {
-                                    "id": "obj-38",
-                                    "maxclass": "newobj",
-                                    "numinlets": 1,
-                                    "numoutlets": 2,
-                                    "outlettype": [ "", "" ],
-                                    "patching_rect": [ 1754.0, 798.0, 67.0, 22.0 ],
-                                    "save": [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
-                                    "text": "thispatcher"
-                                }
-                            },
-                            {
-                                "box": {
-                                    "id": "obj-22",
-                                    "lastchannelcount": 0,
-                                    "maxclass": "live.gain~",
-                                    "numinlets": 2,
-                                    "numoutlets": 5,
-                                    "outlettype": [ "signal", "signal", "", "float", "list" ],
-                                    "parameter_enable": 1,
-                                    "patching_rect": [ 1659.25, 944.0, 48.0, 136.0 ],
-                                    "saved_attribute_attributes": {
-                                        "valueof": {
-                                            "parameter_longname": "live.gain~[2]",
-                                            "parameter_mmax": 6.0,
-                                            "parameter_mmin": -70.0,
-                                            "parameter_modmode": 3,
-                                            "parameter_shortname": "live.gain~[2]",
-                                            "parameter_type": 0,
-                                            "parameter_unitstyle": 4
-                                        }
-                                    },
-                                    "varname": "live.gain~"
-                                }
-                            },
-                            {
-                                "box": {
-                                    "id": "obj-20",
-                                    "maxclass": "newobj",
-                                    "numinlets": 2,
-                                    "numoutlets": 2,
-                                    "outlettype": [ "signal", "bang" ],
-                                    "patching_rect": [ 1658.75, 889.0, 47.0, 22.0 ],
-                                    "text": "sfplay~"
-                                }
-                            },
-                            {
-                                "box": {
-                                    "id": "obj-16",
-                                    "maxclass": "ezdac~",
-                                    "numinlets": 2,
-                                    "numoutlets": 0,
-                                    "patching_rect": [ 1660.75, 1126.0, 45.0, 45.0 ]
                                 }
                             },
                             {
@@ -2026,8 +1893,8 @@
                                     "numinlets": 5,
                                     "numoutlets": 4,
                                     "outlettype": [ "int", "", "", "int" ],
-                                    "patching_rect": [ 441.6666498184204, 437.49998331069946, 75.0, 22.0 ],
-                                    "text": "counter 0 90"
+                                    "patching_rect": [ 441.6666498184204, 437.49998331069946, 82.0, 22.0 ],
+                                    "text": "counter 0 170"
                                 }
                             },
                             {
@@ -2166,7 +2033,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 2,
+                                            "revision": 3,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -2440,12 +2307,6 @@
                             },
                             {
                                 "patchline": {
-                                    "destination": [ "obj-56", 0 ],
-                                    "source": [ "obj-12", 0 ]
-                                }
-                            },
-                            {
-                                "patchline": {
                                     "destination": [ "obj-11", 0 ],
                                     "source": [ "obj-13", 0 ]
                                 }
@@ -2472,20 +2333,6 @@
                             },
                             {
                                 "patchline": {
-                                    "destination": [ "obj-22", 1 ],
-                                    "order": 0,
-                                    "source": [ "obj-20", 0 ]
-                                }
-                            },
-                            {
-                                "patchline": {
-                                    "destination": [ "obj-22", 0 ],
-                                    "order": 1,
-                                    "source": [ "obj-20", 0 ]
-                                }
-                            },
-                            {
-                                "patchline": {
                                     "destination": [ "obj-24", 0 ],
                                     "order": 1,
                                     "source": [ "obj-21", 0 ]
@@ -2496,18 +2343,6 @@
                                     "destination": [ "obj-85", 0 ],
                                     "order": 0,
                                     "source": [ "obj-21", 0 ]
-                                }
-                            },
-                            {
-                                "patchline": {
-                                    "destination": [ "obj-16", 1 ],
-                                    "source": [ "obj-22", 1 ]
-                                }
-                            },
-                            {
-                                "patchline": {
-                                    "destination": [ "obj-16", 0 ],
-                                    "source": [ "obj-22", 0 ]
                                 }
                             },
                             {
@@ -2560,12 +2395,6 @@
                             },
                             {
                                 "patchline": {
-                                    "destination": [ "obj-54", 0 ],
-                                    "source": [ "obj-38", 1 ]
-                                }
-                            },
-                            {
-                                "patchline": {
                                     "destination": [ "obj-84", 0 ],
                                     "source": [ "obj-39", 0 ]
                                 }
@@ -2602,12 +2431,6 @@
                             },
                             {
                                 "patchline": {
-                                    "destination": [ "obj-38", 0 ],
-                                    "source": [ "obj-45", 0 ]
-                                }
-                            },
-                            {
-                                "patchline": {
                                     "destination": [ "obj-100", 0 ],
                                     "source": [ "obj-47", 0 ]
                                 }
@@ -2638,26 +2461,8 @@
                             },
                             {
                                 "patchline": {
-                                    "destination": [ "obj-63", 0 ],
-                                    "source": [ "obj-54", 0 ]
-                                }
-                            },
-                            {
-                                "patchline": {
                                     "destination": [ "obj-53", 0 ],
                                     "source": [ "obj-55", 0 ]
-                                }
-                            },
-                            {
-                                "patchline": {
-                                    "destination": [ "obj-45", 0 ],
-                                    "source": [ "obj-56", 0 ]
-                                }
-                            },
-                            {
-                                "patchline": {
-                                    "destination": [ "obj-60", 0 ],
-                                    "source": [ "obj-56", 1 ]
                                 }
                             },
                             {
@@ -2686,12 +2491,6 @@
                             },
                             {
                                 "patchline": {
-                                    "destination": [ "obj-54", 1 ],
-                                    "source": [ "obj-60", 0 ]
-                                }
-                            },
-                            {
-                                "patchline": {
                                     "destination": [ "obj-52", 0 ],
                                     "order": 0,
                                     "source": [ "obj-61", 0 ]
@@ -2712,12 +2511,6 @@
                             },
                             {
                                 "patchline": {
-                                    "destination": [ "obj-20", 0 ],
-                                    "source": [ "obj-63", 0 ]
-                                }
-                            },
-                            {
-                                "patchline": {
                                     "destination": [ "obj-55", 0 ],
                                     "order": 1,
                                     "source": [ "obj-64", 0 ]
@@ -2734,12 +2527,6 @@
                                 "patchline": {
                                     "destination": [ "obj-11", 0 ],
                                     "source": [ "obj-65", 0 ]
-                                }
-                            },
-                            {
-                                "patchline": {
-                                    "destination": [ "obj-94", 0 ],
-                                    "source": [ "obj-66", 0 ]
                                 }
                             },
                             {
@@ -2858,12 +2645,6 @@
                                 "patchline": {
                                     "destination": [ "obj-92", 0 ],
                                     "source": [ "obj-93", 0 ]
-                                }
-                            },
-                            {
-                                "patchline": {
-                                    "destination": [ "obj-20", 0 ],
-                                    "source": [ "obj-94", 0 ]
                                 }
                             },
                             {
@@ -3115,56 +2896,314 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 2,
+                            "revision": 3,
                             "architecture": "x64",
                             "modernui": 1
                         },
                         "classnamespace": "box",
                         "rect": [ 34.0, 87.0, 1372.0, 694.0 ],
+                        "visible": 1,
                         "boxes": [
                             {
                                 "box": {
-                                    "id": "obj-30",
+                                    "id": "obj-57",
+                                    "maxclass": "message",
+                                    "numinlets": 2,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 869.0, 336.0, 29.5, 22.0 ],
+                                    "text": "1"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-52",
+                                    "maxclass": "newobj",
+                                    "numinlets": 2,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "int" ],
+                                    "patching_rect": [ 832.0, 477.0, 39.0, 22.0 ],
+                                    "text": "+ 100"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-45",
+                                    "maxclass": "newobj",
+                                    "numinlets": 0,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 856.0, 295.0, 50.0, 22.0 ],
+                                    "text": "r trigger"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-102",
+                                    "maxclass": "comment",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "patching_rect": [ 1002.0, 365.0, 116.0, 20.0 ],
+                                    "text": "next section trigger"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-103",
+                                    "maxclass": "message",
+                                    "numinlets": 2,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 802.0, 421.0, 41.0, 22.0 ],
+                                    "text": "set $1"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-104",
+                                    "maxclass": "number",
+                                    "maximum": 0,
+                                    "minimum": -3000,
+                                    "numinlets": 1,
+                                    "numoutlets": 2,
+                                    "outlettype": [ "", "bang" ],
+                                    "parameter_enable": 0,
+                                    "patching_rect": [ 848.0, 421.0, 50.0, 22.0 ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-105",
+                                    "maxclass": "newobj",
+                                    "numinlets": 0,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 982.0, 411.0, 43.0, 22.0 ],
+                                    "text": "r reset"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-106",
                                     "maxclass": "number",
                                     "numinlets": 1,
                                     "numoutlets": 2,
                                     "outlettype": [ "", "bang" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 594.1666525006294, 298.3333262205124, 50.0, 22.0 ]
+                                    "patching_rect": [ 982.0, 440.0, 50.0, 22.0 ]
                                 }
                             },
                             {
                                 "box": {
-                                    "id": "obj-28",
+                                    "id": "obj-108",
+                                    "maxclass": "newobj",
+                                    "numinlets": 2,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "int" ],
+                                    "patching_rect": [ 919.0, 561.0, 29.5, 22.0 ],
+                                    "text": "- 1"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-109",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 919.0, 523.0, 184.0, 22.0 ],
+                                    "text": "if $i1 > -3000 then $i1 else -3000"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-110",
+                                    "maxclass": "newobj",
+                                    "numinlets": 2,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "bang" ],
+                                    "patching_rect": [ 919.0, 377.0, 49.0, 22.0 ],
+                                    "text": "metro 5"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-111",
+                                    "maxclass": "button",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "bang" ],
+                                    "parameter_enable": 0,
+                                    "patching_rect": [ 919.0, 411.0, 24.0, 24.0 ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-113",
+                                    "maxclass": "number",
+                                    "numinlets": 1,
+                                    "numoutlets": 2,
+                                    "outlettype": [ "", "bang" ],
+                                    "parameter_enable": 0,
+                                    "patching_rect": [ 919.0, 602.0, 50.0, 22.0 ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-114",
+                                    "maxclass": "message",
+                                    "numinlets": 2,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 869.0, 602.0, 41.0, 22.0 ],
+                                    "text": "set $1"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-115",
+                                    "maxclass": "number",
+                                    "maximum": 0,
+                                    "numinlets": 1,
+                                    "numoutlets": 2,
+                                    "outlettype": [ "", "bang" ],
+                                    "parameter_enable": 0,
+                                    "patching_rect": [ 919.0, 477.0, 50.0, 22.0 ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-116",
+                                    "maxclass": "toggle",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "int" ],
+                                    "parameter_enable": 0,
+                                    "patching_rect": [ 919.0, 327.0, 24.0, 24.0 ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-39",
+                                    "maxclass": "message",
+                                    "numinlets": 2,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 813.5, 336.0, 29.5, 22.0 ],
+                                    "text": "0"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-37",
+                                    "maxclass": "newobj",
+                                    "numinlets": 0,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 781.5, 295.0, 67.0, 22.0 ],
+                                    "text": "r section_3"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-29",
+                                    "maxclass": "message",
+                                    "numinlets": 2,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 737.5, 645.0, 29.5, 22.0 ],
+                                    "text": "0"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-27",
+                                    "maxclass": "message",
+                                    "numinlets": 2,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 776.0, 641.0, 29.5, 22.0 ],
+                                    "text": "1"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-22",
+                                    "maxclass": "newobj",
+                                    "numinlets": 0,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 724.0, 614.0, 43.0, 22.0 ],
+                                    "text": "r reset"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-16",
+                                    "maxclass": "newobj",
+                                    "numinlets": 0,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 776.0, 611.0, 67.0, 22.0 ],
+                                    "text": "r section_3"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-10",
                                     "int": 1,
                                     "maxclass": "gswitch2",
                                     "numinlets": 2,
                                     "numoutlets": 2,
                                     "outlettype": [ "", "" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 583.3333194255829, 341.0, 39.0, 32.0 ]
-                                }
-                            },
-                            {
-                                "box": {
-                                    "id": "obj-27",
-                                    "maxclass": "newobj",
-                                    "numinlets": 0,
-                                    "numoutlets": 1,
-                                    "outlettype": [ "" ],
-                                    "patching_rect": [ 594.1666525006294, 189.16666215658188, 67.0, 22.0 ],
-                                    "text": "r section_3"
+                                    "patching_rect": [ 755.0, 696.0, 39.0, 32.0 ]
                                 }
                             },
                             {
                                 "box": {
                                     "id": "obj-26",
+                                    "maxclass": "number",
+                                    "maximum": 0,
+                                    "numinlets": 1,
+                                    "numoutlets": 2,
+                                    "outlettype": [ "", "bang" ],
+                                    "parameter_enable": 0,
+                                    "patching_rect": [ 926.0, 659.0, 50.0, 22.0 ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-19",
+                                    "maxclass": "message",
+                                    "numinlets": 2,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 926.0, 692.0, 95.0, 22.0 ],
+                                    "text": "pitchshiftcent $1"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "attr": "quality",
+                                    "id": "obj-7",
+                                    "maxclass": "attrui",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "parameter_enable": 0,
+                                    "patching_rect": [ 524.0, 620.0, 150.0, 22.0 ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-2",
                                     "maxclass": "newobj",
-                                    "numinlets": 5,
-                                    "numoutlets": 4,
-                                    "outlettype": [ "int", "", "", "int" ],
-                                    "patching_rect": [ 549.8333322405815, 476.83333164453506, 69.0, 22.0 ],
-                                    "text": "counter 5 8"
+                                    "numinlets": 2,
+                                    "numoutlets": 2,
+                                    "outlettype": [ "signal", "" ],
+                                    "patching_rect": [ 524.0, 676.0, 63.0, 22.0 ],
+                                    "text": "pitchshift~"
                                 }
                             },
                             {
@@ -3256,7 +3295,7 @@
                                     "numoutlets": 5,
                                     "outlettype": [ "signal", "signal", "signal", "", "dictionary" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 516.0000091791153, 552.4999868273735, 150.0, 92.0 ],
+                                    "patching_rect": [ 524.0, 475.0, 150.0, 92.0 ],
                                     "quality": "basic",
                                     "saved_attribute_attributes": {
                                         "candicane2": {
@@ -3291,7 +3330,7 @@
                                     "maxclass": "outlet",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 553.5000082850456, 718.3333162069321, 30.0, 30.0 ]
+                                    "patching_rect": [ 555.5, 739.0, 30.0, 30.0 ]
                                 }
                             },
                             {
@@ -3302,494 +3341,7 @@
                                     "maxclass": "outlet",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 493.5000097155571, 718.3333162069321, 30.0, 30.0 ]
-                                }
-                            },
-                            {
-                                "box": {
-                                    "clipheight": 20.0,
-                                    "data": {
-                                        "clips": [
-                                            {
-                                                "absolutepath": "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_piano/Slice 1 [2026-02-16 201902].wav",
-                                                "filename": "Slice 1 [2026-02-16 201902].wav",
-                                                "filekind": "audiofile",
-                                                "id": "u491013692",
-                                                "loop": 0,
-                                                "content_state": {                                                }
-                                            },
-                                            {
-                                                "absolutepath": "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_piano/Slice 2 [2026-02-16 201909].wav",
-                                                "filename": "Slice 2 [2026-02-16 201909].wav",
-                                                "filekind": "audiofile",
-                                                "id": "u162013662",
-                                                "loop": 0,
-                                                "content_state": {
-                                                    "loop": 0
-                                                }
-                                            },
-                                            {
-                                                "absolutepath": "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_piano/Slice 3 [2026-02-16 201912].wav",
-                                                "filename": "Slice 3 [2026-02-16 201912].wav",
-                                                "filekind": "audiofile",
-                                                "id": "u845013663",
-                                                "loop": 0,
-                                                "content_state": {                                                }
-                                            },
-                                            {
-                                                "absolutepath": "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_piano/Slice 4 [2026-02-16 201917].wav",
-                                                "filename": "Slice 4 [2026-02-16 201917].wav",
-                                                "filekind": "audiofile",
-                                                "id": "u562013664",
-                                                "loop": 0,
-                                                "content_state": {                                                }
-                                            },
-                                            {
-                                                "absolutepath": "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_piano/Slice 5 [2026-02-16 201924].wav",
-                                                "filename": "Slice 5 [2026-02-16 201924].wav",
-                                                "filekind": "audiofile",
-                                                "id": "u376013665",
-                                                "loop": 0,
-                                                "content_state": {                                                }
-                                            },
-                                            {
-                                                "absolutepath": "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_piano/Slice 6 [2026-02-16 201927].wav",
-                                                "filename": "Slice 6 [2026-02-16 201927].wav",
-                                                "filekind": "audiofile",
-                                                "id": "u776013666",
-                                                "loop": 0,
-                                                "content_state": {                                                }
-                                            },
-                                            {
-                                                "absolutepath": "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_piano/Slice 8 [2026-02-16 201935].wav",
-                                                "filename": "Slice 8 [2026-02-16 201935].wav",
-                                                "filekind": "audiofile",
-                                                "id": "u842013667",
-                                                "loop": 0,
-                                                "content_state": {                                                }
-                                            },
-                                            {
-                                                "absolutepath": "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_piano/Slice 9 [2026-02-16 201938].wav",
-                                                "filename": "Slice 9 [2026-02-16 201938].wav",
-                                                "filekind": "audiofile",
-                                                "id": "u827013668",
-                                                "loop": 0,
-                                                "content_state": {                                                }
-                                            },
-                                            {
-                                                "absolutepath": "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_piano/Slice 10 [2026-02-16 201940].wav",
-                                                "filename": "Slice 10 [2026-02-16 201940].wav",
-                                                "filekind": "audiofile",
-                                                "id": "u836013669",
-                                                "loop": 0,
-                                                "content_state": {                                                }
-                                            },
-                                            {
-                                                "absolutepath": "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_piano/Slice 11 [2026-02-16 201943].wav",
-                                                "filename": "Slice 11 [2026-02-16 201943].wav",
-                                                "filekind": "audiofile",
-                                                "id": "u326013670",
-                                                "loop": 0,
-                                                "content_state": {                                                }
-                                            },
-                                            {
-                                                "absolutepath": "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_piano/Slice 12 [2026-02-16 201945].wav",
-                                                "filename": "Slice 12 [2026-02-16 201945].wav",
-                                                "filekind": "audiofile",
-                                                "id": "u342013671",
-                                                "loop": 0,
-                                                "content_state": {                                                }
-                                            },
-                                            {
-                                                "absolutepath": "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_piano/Slice 13 [2026-02-16 201948].wav",
-                                                "filename": "Slice 13 [2026-02-16 201948].wav",
-                                                "filekind": "audiofile",
-                                                "id": "u723013672",
-                                                "loop": 0,
-                                                "content_state": {                                                }
-                                            },
-                                            {
-                                                "absolutepath": "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_piano/Slice 14 [2026-02-16 201951].wav",
-                                                "filename": "Slice 14 [2026-02-16 201951].wav",
-                                                "filekind": "audiofile",
-                                                "id": "u231013673",
-                                                "loop": 0,
-                                                "content_state": {                                                }
-                                            },
-                                            {
-                                                "absolutepath": "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_piano/Slice 15 [2026-02-16 201953].wav",
-                                                "filename": "Slice 15 [2026-02-16 201953].wav",
-                                                "filekind": "audiofile",
-                                                "id": "u343013674",
-                                                "loop": 0,
-                                                "content_state": {                                                }
-                                            },
-                                            {
-                                                "absolutepath": "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_piano/Slice 17 [2026-02-16 202008].wav",
-                                                "filename": "Slice 17 [2026-02-16 202008].wav",
-                                                "filekind": "audiofile",
-                                                "id": "u795013675",
-                                                "loop": 0,
-                                                "content_state": {                                                }
-                                            },
-                                            {
-                                                "absolutepath": "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_piano/Slice 18 [2026-02-16 202011].wav",
-                                                "filename": "Slice 18 [2026-02-16 202011].wav",
-                                                "filekind": "audiofile",
-                                                "id": "u537013676",
-                                                "loop": 0,
-                                                "content_state": {                                                }
-                                            },
-                                            {
-                                                "absolutepath": "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_piano/Slice 19 [2026-02-16 202013].wav",
-                                                "filename": "Slice 19 [2026-02-16 202013].wav",
-                                                "filekind": "audiofile",
-                                                "id": "u999013677",
-                                                "loop": 0,
-                                                "content_state": {                                                }
-                                            },
-                                            {
-                                                "absolutepath": "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_piano/Slice 20 [2026-02-16 202015].wav",
-                                                "filename": "Slice 20 [2026-02-16 202015].wav",
-                                                "filekind": "audiofile",
-                                                "id": "u480013678",
-                                                "loop": 0,
-                                                "content_state": {                                                }
-                                            },
-                                            {
-                                                "absolutepath": "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_piano/Slice 21 [2026-02-16 202018].wav",
-                                                "filename": "Slice 21 [2026-02-16 202018].wav",
-                                                "filekind": "audiofile",
-                                                "id": "u866013679",
-                                                "loop": 0,
-                                                "content_state": {                                                }
-                                            },
-                                            {
-                                                "absolutepath": "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_piano/Slice 22 [2026-02-16 202020].wav",
-                                                "filename": "Slice 22 [2026-02-16 202020].wav",
-                                                "filekind": "audiofile",
-                                                "id": "u719013680",
-                                                "loop": 0,
-                                                "content_state": {                                                }
-                                            },
-                                            {
-                                                "absolutepath": "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_piano/Slice 23 [2026-02-16 202022].wav",
-                                                "filename": "Slice 23 [2026-02-16 202022].wav",
-                                                "filekind": "audiofile",
-                                                "id": "u887013681",
-                                                "loop": 0,
-                                                "content_state": {                                                }
-                                            },
-                                            {
-                                                "absolutepath": "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_piano/Slice 24 [2026-02-16 202024].wav",
-                                                "filename": "Slice 24 [2026-02-16 202024].wav",
-                                                "filekind": "audiofile",
-                                                "id": "u369013682",
-                                                "loop": 0,
-                                                "content_state": {                                                }
-                                            },
-                                            {
-                                                "absolutepath": "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_piano/Slice 26 [2026-02-16 202032].wav",
-                                                "filename": "Slice 26 [2026-02-16 202032].wav",
-                                                "filekind": "audiofile",
-                                                "id": "u647013683",
-                                                "loop": 0,
-                                                "content_state": {                                                }
-                                            },
-                                            {
-                                                "absolutepath": "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_piano/Slice 28 [2026-02-16 202037].wav",
-                                                "filename": "Slice 28 [2026-02-16 202037].wav",
-                                                "filekind": "audiofile",
-                                                "id": "u849013684",
-                                                "loop": 0,
-                                                "content_state": {                                                }
-                                            },
-                                            {
-                                                "absolutepath": "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_piano/Slice 29 [2026-02-16 202040].wav",
-                                                "filename": "Slice 29 [2026-02-16 202040].wav",
-                                                "filekind": "audiofile",
-                                                "id": "u972013685",
-                                                "loop": 0,
-                                                "content_state": {                                                }
-                                            },
-                                            {
-                                                "absolutepath": "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_piano/Slice 30 [2026-02-16 202042].wav",
-                                                "filename": "Slice 30 [2026-02-16 202042].wav",
-                                                "filekind": "audiofile",
-                                                "id": "u968013686",
-                                                "loop": 0,
-                                                "content_state": {                                                }
-                                            },
-                                            {
-                                                "absolutepath": "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_piano/Slice 31 [2026-02-16 202046].wav",
-                                                "filename": "Slice 31 [2026-02-16 202046].wav",
-                                                "filekind": "audiofile",
-                                                "id": "u435013687",
-                                                "loop": 0,
-                                                "content_state": {                                                }
-                                            },
-                                            {
-                                                "absolutepath": "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_piano/Slice 32 [2026-02-16 202048].wav",
-                                                "filename": "Slice 32 [2026-02-16 202048].wav",
-                                                "filekind": "audiofile",
-                                                "id": "u960013688",
-                                                "loop": 0,
-                                                "content_state": {                                                }
-                                            },
-                                            {
-                                                "absolutepath": "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_piano/Slice 33 [2026-02-16 202052].wav",
-                                                "filename": "Slice 33 [2026-02-16 202052].wav",
-                                                "filekind": "audiofile",
-                                                "id": "u720013689",
-                                                "loop": 0,
-                                                "content_state": {                                                }
-                                            },
-                                            {
-                                                "absolutepath": "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_piano/Slice 34 [2026-02-16 202055].wav",
-                                                "filename": "Slice 34 [2026-02-16 202055].wav",
-                                                "filekind": "audiofile",
-                                                "id": "u146013690",
-                                                "loop": 0,
-                                                "content_state": {                                                }
-                                            },
-                                            {
-                                                "absolutepath": "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_piano/Slice 35 [2026-02-16 202057].wav",
-                                                "filename": "Slice 35 [2026-02-16 202057].wav",
-                                                "filekind": "audiofile",
-                                                "id": "u113013691",
-                                                "loop": 0,
-                                                "content_state": {                                                }
-                                            }
-                                        ]
-                                    },
-                                    "id": "obj-2",
-                                    "maxclass": "playlist~",
-                                    "mode": "basic",
-                                    "numinlets": 1,
-                                    "numoutlets": 5,
-                                    "outlettype": [ "signal", "signal", "signal", "", "dictionary" ],
-                                    "parameter_enable": 0,
-                                    "patching_rect": [ 154.1666629910469, 371.0, 150.0, 92.0 ],
-                                    "quality": "basic",
-                                    "saved_attribute_attributes": {
-                                        "candicane2": {
-                                            "expression": ""
-                                        },
-                                        "candicane3": {
-                                            "expression": ""
-                                        },
-                                        "candicane4": {
-                                            "expression": ""
-                                        },
-                                        "candicane5": {
-                                            "expression": ""
-                                        },
-                                        "candicane6": {
-                                            "expression": ""
-                                        },
-                                        "candicane7": {
-                                            "expression": ""
-                                        },
-                                        "candicane8": {
-                                            "expression": ""
-                                        }
-                                    }
-                                }
-                            },
-                            {
-                                "box": {
-                                    "id": "obj-17",
-                                    "maxclass": "comment",
-                                    "numinlets": 1,
-                                    "numoutlets": 0,
-                                    "patching_rect": [ 1108.0, 83.0, 73.0, 20.0 ],
-                                    "text": "loud piano"
-                                }
-                            },
-                            {
-                                "box": {
-                                    "clipheight": 39.0,
-                                    "data": {
-                                        "clips": [
-                                            {
-                                                "absolutepath": "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_piano_2/Slice 1 [2026-02-17 114715].wav",
-                                                "filename": "Slice 1 [2026-02-17 114715].wav",
-                                                "filekind": "audiofile",
-                                                "id": "u217004196",
-                                                "loop": 0,
-                                                "content_state": {                                                }
-                                            },
-                                            {
-                                                "absolutepath": "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_piano_2/Slice 2 [2026-02-17 114717].wav",
-                                                "filename": "Slice 2 [2026-02-17 114717].wav",
-                                                "filekind": "audiofile",
-                                                "id": "u267004193",
-                                                "loop": 0,
-                                                "content_state": {                                                }
-                                            },
-                                            {
-                                                "absolutepath": "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_piano_2/Slice 3 [2026-02-17 114720].wav",
-                                                "filename": "Slice 3 [2026-02-17 114720].wav",
-                                                "filekind": "audiofile",
-                                                "id": "u902004194",
-                                                "loop": 0,
-                                                "content_state": {                                                }
-                                            },
-                                            {
-                                                "absolutepath": "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_piano_2/Slice 4 [2026-02-17 114723].wav",
-                                                "filename": "Slice 4 [2026-02-17 114723].wav",
-                                                "filekind": "audiofile",
-                                                "id": "u686004195",
-                                                "loop": 0,
-                                                "content_state": {                                                }
-                                            }
-                                        ]
-                                    },
-                                    "id": "obj-10",
-                                    "maxclass": "playlist~",
-                                    "mode": "basic",
-                                    "numinlets": 1,
-                                    "numoutlets": 5,
-                                    "outlettype": [ "signal", "signal", "signal", "", "dictionary" ],
-                                    "parameter_enable": 0,
-                                    "patching_rect": [ 854.0, 127.0, 394.0, 160.0 ],
-                                    "quality": "basic",
-                                    "saved_attribute_attributes": {
-                                        "candicane2": {
-                                            "expression": ""
-                                        },
-                                        "candicane3": {
-                                            "expression": ""
-                                        },
-                                        "candicane4": {
-                                            "expression": ""
-                                        },
-                                        "candicane5": {
-                                            "expression": ""
-                                        },
-                                        "candicane6": {
-                                            "expression": ""
-                                        },
-                                        "candicane7": {
-                                            "expression": ""
-                                        },
-                                        "candicane8": {
-                                            "expression": ""
-                                        }
-                                    }
-                                }
-                            },
-                            {
-                                "box": {
-                                    "clipheight": 20.0,
-                                    "data": {
-                                        "clips": [
-                                            {
-                                                "absolutepath": "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_piano_2/Slice 5 [2026-02-17 114725].wav",
-                                                "filename": "Slice 5 [2026-02-17 114725].wav",
-                                                "filekind": "audiofile",
-                                                "id": "u147003461",
-                                                "loop": 0,
-                                                "content_state": {                                                }
-                                            },
-                                            {
-                                                "absolutepath": "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_piano_2/Slice 6 [2026-02-17 114728].wav",
-                                                "filename": "Slice 6 [2026-02-17 114728].wav",
-                                                "filekind": "audiofile",
-                                                "id": "u303003462",
-                                                "loop": 0,
-                                                "content_state": {                                                }
-                                            },
-                                            {
-                                                "absolutepath": "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_piano_2/Slice 7 [2026-02-17 114730].wav",
-                                                "filename": "Slice 7 [2026-02-17 114730].wav",
-                                                "filekind": "audiofile",
-                                                "id": "u446003463",
-                                                "loop": 0,
-                                                "content_state": {                                                }
-                                            },
-                                            {
-                                                "absolutepath": "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_piano_2/Slice 8 [2026-02-17 114733].wav",
-                                                "filename": "Slice 8 [2026-02-17 114733].wav",
-                                                "filekind": "audiofile",
-                                                "id": "u132003464",
-                                                "loop": 0,
-                                                "content_state": {                                                }
-                                            },
-                                            {
-                                                "absolutepath": "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_piano_2/Slice 9 [2026-02-17 114736].wav",
-                                                "filename": "Slice 9 [2026-02-17 114736].wav",
-                                                "filekind": "audiofile",
-                                                "id": "u545003465",
-                                                "loop": 0,
-                                                "content_state": {                                                }
-                                            },
-                                            {
-                                                "absolutepath": "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_piano_2/Slice 10 [2026-02-17 114739].wav",
-                                                "filename": "Slice 10 [2026-02-17 114739].wav",
-                                                "filekind": "audiofile",
-                                                "id": "u226003466",
-                                                "loop": 0,
-                                                "content_state": {                                                }
-                                            },
-                                            {
-                                                "absolutepath": "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_piano_2/Slice 11 [2026-02-17 114742].wav",
-                                                "filename": "Slice 11 [2026-02-17 114742].wav",
-                                                "filekind": "audiofile",
-                                                "id": "u246003467",
-                                                "loop": 0,
-                                                "content_state": {                                                }
-                                            },
-                                            {
-                                                "absolutepath": "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_piano_2/Slice 12 [2026-02-17 114744].wav",
-                                                "filename": "Slice 12 [2026-02-17 114744].wav",
-                                                "filekind": "audiofile",
-                                                "id": "u754003468",
-                                                "loop": 0,
-                                                "content_state": {                                                }
-                                            },
-                                            {
-                                                "absolutepath": "/Users/juan/Desktop/Max-Sc/Max/drumset_piece/cropped_piano_2/Slice 13 [2026-02-17 114747].wav",
-                                                "filename": "Slice 13 [2026-02-17 114747].wav",
-                                                "filekind": "audiofile",
-                                                "id": "u127003469",
-                                                "loop": 0,
-                                                "content_state": {                                                }
-                                            }
-                                        ]
-                                    },
-                                    "id": "obj-7",
-                                    "maxclass": "playlist~",
-                                    "mode": "basic",
-                                    "numinlets": 1,
-                                    "numoutlets": 5,
-                                    "outlettype": [ "signal", "signal", "signal", "", "dictionary" ],
-                                    "parameter_enable": 0,
-                                    "patching_rect": [ 836.0, 341.0, 276.0, 87.0 ],
-                                    "quality": "basic",
-                                    "saved_attribute_attributes": {
-                                        "candicane2": {
-                                            "expression": ""
-                                        },
-                                        "candicane3": {
-                                            "expression": ""
-                                        },
-                                        "candicane4": {
-                                            "expression": ""
-                                        },
-                                        "candicane5": {
-                                            "expression": ""
-                                        },
-                                        "candicane6": {
-                                            "expression": ""
-                                        },
-                                        "candicane7": {
-                                            "expression": ""
-                                        },
-                                        "candicane8": {
-                                            "expression": ""
-                                        }
-                                    }
+                                    "patching_rect": [ 495.5, 739.0, 30.0, 30.0 ]
                                 }
                             },
                             {
@@ -3866,7 +3418,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
                                     "patching_rect": [ 660.8333175778389, 384.1666575074196, 50.0, 22.0 ],
-                                    "text": "5"
+                                    "text": "2"
                                 }
                             },
                             {
@@ -3924,94 +3476,222 @@
                             },
                             {
                                 "patchline": {
+                                    "destination": [ "obj-2", 0 ],
+                                    "source": [ "obj-10", 1 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-104", 0 ],
+                                    "source": [ "obj-103", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-52", 0 ],
+                                    "source": [ "obj-104", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-106", 0 ],
+                                    "source": [ "obj-105", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-115", 0 ],
+                                    "source": [ "obj-106", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-113", 0 ],
+                                    "source": [ "obj-108", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-108", 0 ],
+                                    "source": [ "obj-109", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-111", 0 ],
+                                    "source": [ "obj-110", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-115", 0 ],
+                                    "source": [ "obj-111", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-114", 0 ],
+                                    "order": 1,
+                                    "source": [ "obj-113", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-26", 0 ],
+                                    "order": 0,
+                                    "source": [ "obj-113", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-115", 0 ],
+                                    "source": [ "obj-114", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-103", 0 ],
+                                    "order": 1,
+                                    "source": [ "obj-115", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-109", 0 ],
+                                    "order": 0,
+                                    "source": [ "obj-115", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-110", 0 ],
+                                    "source": [ "obj-116", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
                                     "destination": [ "obj-20", 0 ],
                                     "source": [ "obj-13", 0 ]
                                 }
                             },
                             {
                                 "patchline": {
-                                    "destination": [ "obj-26", 2 ],
-                                    "order": 0,
+                                    "destination": [ "obj-6", 2 ],
                                     "source": [ "obj-15", 0 ]
                                 }
                             },
                             {
                                 "patchline": {
-                                    "destination": [ "obj-6", 2 ],
-                                    "order": 1,
-                                    "source": [ "obj-15", 0 ]
+                                    "destination": [ "obj-27", 0 ],
+                                    "source": [ "obj-16", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-10", 1 ],
+                                    "source": [ "obj-19", 0 ]
                                 }
                             },
                             {
                                 "patchline": {
                                     "destination": [ "obj-11", 0 ],
                                     "order": 0,
-                                    "source": [ "obj-20", 0 ]
+                                    "source": [ "obj-2", 0 ]
                                 }
                             },
                             {
                                 "patchline": {
                                     "destination": [ "obj-12", 0 ],
                                     "order": 1,
+                                    "source": [ "obj-2", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-2", 0 ],
                                     "source": [ "obj-20", 0 ]
                                 }
                             },
                             {
                                 "patchline": {
                                     "destination": [ "obj-15", 0 ],
-                                    "order": 1,
                                     "source": [ "obj-21", 0 ]
                                 }
                             },
                             {
                                 "patchline": {
-                                    "destination": [ "obj-30", 0 ],
-                                    "order": 0,
-                                    "source": [ "obj-21", 0 ]
+                                    "destination": [ "obj-29", 0 ],
+                                    "source": [ "obj-22", 0 ]
                                 }
                             },
                             {
                                 "patchline": {
-                                    "destination": [ "obj-13", 1 ],
-                                    "order": 0,
+                                    "destination": [ "obj-19", 0 ],
                                     "source": [ "obj-26", 0 ]
                                 }
                             },
                             {
                                 "patchline": {
-                                    "destination": [ "obj-20", 0 ],
-                                    "order": 1,
-                                    "source": [ "obj-26", 0 ]
-                                }
-                            },
-                            {
-                                "patchline": {
-                                    "destination": [ "obj-28", 0 ],
+                                    "destination": [ "obj-10", 0 ],
                                     "source": [ "obj-27", 0 ]
                                 }
                             },
                             {
                                 "patchline": {
-                                    "destination": [ "obj-26", 0 ],
-                                    "source": [ "obj-28", 1 ]
+                                    "destination": [ "obj-10", 0 ],
+                                    "order": 1,
+                                    "source": [ "obj-29", 0 ]
                                 }
                             },
                             {
                                 "patchline": {
-                                    "destination": [ "obj-6", 0 ],
-                                    "source": [ "obj-28", 0 ]
+                                    "destination": [ "obj-116", 0 ],
+                                    "order": 0,
+                                    "source": [ "obj-29", 0 ]
                                 }
                             },
                             {
                                 "patchline": {
-                                    "destination": [ "obj-28", 0 ],
-                                    "source": [ "obj-30", 0 ]
+                                    "destination": [ "obj-39", 0 ],
+                                    "order": 1,
+                                    "source": [ "obj-37", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-57", 0 ],
+                                    "order": 0,
+                                    "source": [ "obj-37", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-104", 0 ],
+                                    "source": [ "obj-39", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-104", 0 ],
+                                    "source": [ "obj-45", 0 ]
                                 }
                             },
                             {
                                 "patchline": {
                                     "destination": [ "obj-13", 0 ],
                                     "source": [ "obj-5", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-115", 0 ],
+                                    "source": [ "obj-52", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-116", 0 ],
+                                    "source": [ "obj-57", 0 ]
                                 }
                             },
                             {
@@ -4037,7 +3717,13 @@
                             },
                             {
                                 "patchline": {
-                                    "destination": [ "obj-28", 1 ],
+                                    "destination": [ "obj-2", 0 ],
+                                    "source": [ "obj-7", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-6", 0 ],
                                     "source": [ "obj-8", 0 ]
                                 }
                             },
@@ -4167,7 +3853,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 2,
+                            "revision": 3,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -4624,7 +4310,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 2,
+                            "revision": 3,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -6387,7 +6073,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 2,
+                            "revision": 3,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -6622,7 +6308,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 2,
+                            "revision": 3,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -6874,7 +6560,7 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-141", 0 ],
+                    "destination": [ "obj-132", 0 ],
                     "source": [ "obj-107", 0 ]
                 }
             },
@@ -6912,21 +6598,14 @@
             {
                 "patchline": {
                     "destination": [ "obj-114", 0 ],
-                    "order": 2,
+                    "order": 1,
                     "source": [ "obj-113", 0 ]
                 }
             },
             {
                 "patchline": {
                     "destination": [ "obj-117", 0 ],
-                    "order": 3,
-                    "source": [ "obj-113", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-131", 0 ],
-                    "order": 1,
+                    "order": 2,
                     "source": [ "obj-113", 0 ]
                 }
             },
@@ -7000,15 +6679,7 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-130", 0 ],
-                    "order": 1,
-                    "source": [ "obj-128", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-136", 0 ],
-                    "order": 0,
                     "source": [ "obj-128", 0 ]
                 }
             },
@@ -7016,18 +6687,6 @@
                 "patchline": {
                     "destination": [ "obj-72", 0 ],
                     "source": [ "obj-129", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-144", 0 ],
-                    "source": [ "obj-130", 1 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-130", 1 ],
-                    "source": [ "obj-131", 0 ]
                 }
             },
             {
@@ -7044,6 +6703,12 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-24", 0 ],
+                    "source": [ "obj-135", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-59", 0 ],
                     "source": [ "obj-137", 0 ]
                 }
@@ -7056,39 +6721,44 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-130", 0 ],
-                    "source": [ "obj-141", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-146", 0 ],
-                    "source": [ "obj-143", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-130", 0 ],
-                    "midpoints": [ 1973.5, 1182.0, 1929.0, 1182.0, 1929.0, 1116.0, 1953.5, 1116.0 ],
-                    "source": [ "obj-144", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-132", 0 ],
-                    "source": [ "obj-144", 1 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-104", 0 ],
-                    "source": [ "obj-146", 0 ]
+                    "destination": [ "obj-151", 0 ],
+                    "source": [ "obj-149", 0 ]
                 }
             },
             {
                 "patchline": {
                     "destination": [ "obj-60", 0 ],
                     "source": [ "obj-15", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-137", 0 ],
+                    "source": [ "obj-151", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-154", 0 ],
+                    "source": [ "obj-152", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-137", 0 ],
+                    "source": [ "obj-154", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-157", 0 ],
+                    "source": [ "obj-155", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-59", 0 ],
+                    "source": [ "obj-157", 0 ]
                 }
             },
             {
@@ -7100,14 +6770,6 @@
             {
                 "patchline": {
                     "destination": [ "obj-13", 0 ],
-                    "order": 1,
-                    "source": [ "obj-17", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-47", 0 ],
-                    "order": 0,
                     "source": [ "obj-17", 0 ]
                 }
             },
@@ -7146,14 +6808,6 @@
             {
                 "patchline": {
                     "destination": [ "obj-12", 0 ],
-                    "order": 1,
-                    "source": [ "obj-21", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-48", 0 ],
-                    "order": 0,
                     "source": [ "obj-21", 0 ]
                 }
             },
@@ -7696,7 +7350,6 @@
             "obj-1::obj-96": [ "number[19]", "number[19]", 0 ],
             "obj-1::obj-97": [ "button[8]", "button[8]", 0 ],
             "obj-59": [ "live.gain~", "live.gain~", 0 ],
-            "obj-6::obj-22": [ "live.gain~[2]", "live.gain~[2]", 0 ],
             "obj-6::obj-32": [ "attrui[6]", "attrui[6]", 0 ],
             "obj-6::obj-34": [ "attrui[4]", "attrui[4]", 0 ],
             "obj-6::obj-36": [ "attrui[3]", "attrui[3]", 0 ],
@@ -7708,6 +7361,14 @@
             "obj-6::obj-76": [ "attrui[5]", "attrui[5]", 0 ],
             "obj-94": [ "live.gain~[1]", "live.gain~[1]", 0 ],
             "obj-97": [ "button[14]", "button[8]", 0 ],
+            "parameterbanks": {
+                "0": {
+                    "index": 0,
+                    "name": "",
+                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+                }
+            },
             "inherited_shortname": 1
         },
         "autosave": 0

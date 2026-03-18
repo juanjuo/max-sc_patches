@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 393.0, 130.0, 1000.0, 776.0 ],
+        "rect": [ 34.0, 87.0, 1372.0, 694.0 ],
         "boxes": [
             {
                 "box": {
@@ -61,7 +61,6 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 1025.0, 81.12643599510193, 64.0, 22.0 ],
-                    "presentation_linecount": 3,
                     "text": "draw_stop"
                 }
             },
@@ -840,9 +839,8 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 588.0, 62.0, 105.0, 22.0 ],
-                    "presentation_linecount": 2,
-                    "text": "host 192.168.4.32"
+                    "patching_rect": [ 588.0, 62.0, 98.0, 22.0 ],
+                    "text": "host 10.10.48.49"
                 }
             },
             {
@@ -888,12 +886,6 @@
                 "patchline": {
                     "destination": [ "obj-97", 0 ],
                     "source": [ "obj-102", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-99", 0 ],
-                    "source": [ "obj-104", 0 ]
                 }
             },
             {
@@ -1236,12 +1228,6 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-79", 0 ],
-                    "source": [ "obj-83", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-76", 0 ],
                     "source": [ "obj-84", 0 ]
                 }
@@ -1306,14 +1292,6 @@
         ],
         "parameters": {
             "obj-16": [ "live.gain~", "live.gain~", 0 ],
-            "parameterbanks": {
-                "0": {
-                    "index": 0,
-                    "name": "",
-                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
-                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-                }
-            },
             "inherited_shortname": 1
         },
         "autosave": 0
