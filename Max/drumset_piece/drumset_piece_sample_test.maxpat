@@ -4,13 +4,240 @@
         "appversion": {
             "major": 9,
             "minor": 1,
-            "revision": 3,
+            "revision": 4,
             "architecture": "x64",
             "modernui": 1
         },
         "classnamespace": "box",
         "rect": [ 34.0, 87.0, 1372.0, 694.0 ],
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-4",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 0,
+                    "patcher": {
+                        "fileversion": 1,
+                        "appversion": {
+                            "major": 9,
+                            "minor": 1,
+                            "revision": 4,
+                            "architecture": "x64",
+                            "modernui": 1
+                        },
+                        "classnamespace": "box",
+                        "rect": [ 59.0, 106.0, 1000.0, 632.0 ],
+                        "visible": 1,
+                        "boxes": [
+                            {
+                                "box": {
+                                    "id": "obj-1",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "bang" ],
+                                    "patching_rect": [ 580.0, 431.0, 58.0, 22.0 ],
+                                    "text": "loadbang"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-29",
+                                    "maxclass": "newobj",
+                                    "numinlets": 2,
+                                    "numoutlets": 2,
+                                    "outlettype": [ "bang", "" ],
+                                    "patching_rect": [ 290.0, 354.0, 46.0, 22.0 ],
+                                    "text": "sel 112"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-26",
+                                    "maxclass": "newobj",
+                                    "numinlets": 0,
+                                    "numoutlets": 4,
+                                    "outlettype": [ "int", "int", "int", "int" ],
+                                    "patching_rect": [ 259.0, 265.0, 50.5, 22.0 ],
+                                    "text": "key"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "attr": "border",
+                                    "id": "obj-25",
+                                    "maxclass": "attrui",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "parameter_enable": 0,
+                                    "patching_rect": [ 726.0, 416.0, 150.0, 22.0 ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-24",
+                                    "maxclass": "toggle",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "int" ],
+                                    "parameter_enable": 0,
+                                    "patching_rect": [ 597.0, 465.0, 24.0, 24.0 ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-38",
+                                    "maxclass": "playbar",
+                                    "numinlets": 1,
+                                    "numoutlets": 2,
+                                    "outlettype": [ "", "int" ],
+                                    "patching_rect": [ 397.0, 220.0, 389.0, 21.0 ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "attr": "automatic",
+                                    "id": "obj-14",
+                                    "maxclass": "attrui",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "parameter_enable": 0,
+                                    "patching_rect": [ 687.0, 265.0, 109.0, 22.0 ],
+                                    "text_width": 83.0
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-22",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 3,
+                                    "outlettype": [ "jit_matrix", "bang", "" ],
+                                    "patching_rect": [ 645.0, 480.0, 49.0, 22.0 ],
+                                    "text": "jit.world"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-21",
+                                    "maxclass": "message",
+                                    "numinlets": 2,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 726.0, 325.0, 31.0, 22.0 ],
+                                    "text": "stop"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-18",
+                                    "maxclass": "message",
+                                    "numinlets": 2,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 474.0, 365.0, 32.0, 22.0 ],
+                                    "text": "start"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-16",
+                                    "maxclass": "message",
+                                    "numinlets": 2,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 534.0, 349.0, 33.0, 22.0 ],
+                                    "text": "read"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-9",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 2,
+                                    "outlettype": [ "jit_gl_texture", "" ],
+                                    "patching_rect": [ 645.0, 387.0, 65.0, 22.0 ],
+                                    "text": "jit.gl.movie"
+                                }
+                            }
+                        ],
+                        "lines": [
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-24", 0 ],
+                                    "source": [ "obj-1", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-9", 0 ],
+                                    "source": [ "obj-14", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-9", 0 ],
+                                    "source": [ "obj-16", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-9", 0 ],
+                                    "source": [ "obj-18", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-9", 0 ],
+                                    "source": [ "obj-21", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-22", 0 ],
+                                    "source": [ "obj-24", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-22", 0 ],
+                                    "source": [ "obj-25", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-29", 0 ],
+                                    "source": [ "obj-26", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-18", 0 ],
+                                    "source": [ "obj-29", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-9", 0 ],
+                                    "source": [ "obj-38", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-22", 0 ],
+                                    "source": [ "obj-9", 0 ]
+                                }
+                            }
+                        ]
+                    },
+                    "patching_rect": [ 1173.0, 102.0, 91.0, 22.0 ],
+                    "text": "p rodney_video"
+                }
+            },
             {
                 "box": {
                     "fontsize": 30.0,
@@ -35,7 +262,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 3,
+                            "revision": 4,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -411,7 +638,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 3,
+                            "revision": 4,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -1122,7 +1349,6 @@
             {
                 "box": {
                     "id": "obj-22",
-                    "int": 1,
                     "maxclass": "gswitch2",
                     "numinlets": 2,
                     "numoutlets": 2,
@@ -1320,7 +1546,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 3,
+                            "revision": 4,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -1511,7 +1737,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
                                     "patching_rect": [ 541.0, 941.0, 72.0, 22.0 ],
-                                    "text": "1.022836"
+                                    "text": "0."
                                 }
                             },
                             {
@@ -1605,7 +1831,6 @@
                             {
                                 "box": {
                                     "id": "obj-88",
-                                    "int": 1,
                                     "maxclass": "gswitch",
                                     "numinlets": 3,
                                     "numoutlets": 1,
@@ -1705,7 +1930,6 @@
                             {
                                 "box": {
                                     "id": "obj-58",
-                                    "int": 1,
                                     "maxclass": "gswitch",
                                     "numinlets": 3,
                                     "numoutlets": 1,
@@ -1728,7 +1952,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 3,
+                                            "revision": 4,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -2313,7 +2537,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 0,
                                     "patching_rect": [ 738.0, 697.0, 85.0, 20.0 ],
-                                    "text": "1.85. 1.65. 1."
+                                    "text": "2.2. 1.92. 1."
                                 }
                             },
                             {
@@ -2373,7 +2597,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 3,
+                                            "revision": 4,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -3118,13 +3342,12 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 3,
+                            "revision": 4,
                             "architecture": "x64",
                             "modernui": 1
                         },
                         "classnamespace": "box",
                         "rect": [ 34.0, 87.0, 884.0, 694.0 ],
-                        "visible": 1,
                         "boxes": [
                             {
                                 "box": {
@@ -3177,7 +3400,6 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
                                     "patching_rect": [ 474.0, 604.0, 99.0, 22.0 ],
-                                    "presentation_linecount": 2,
                                     "text": "120, 256 150000"
                                 }
                             },
@@ -3206,7 +3428,7 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 3,
+                                            "revision": 4,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
@@ -3506,7 +3728,7 @@
                                                 }
                                             },
                                             {
-                                                "absolutepath": "Macintosh HD:/Users/juan/Desktop/Max-Sc/Max/drumset_piece/piano/1.wav",
+                                                "absolutepath": "1.wav",
                                                 "filename": "1.wav",
                                                 "filekind": "audiofile",
                                                 "id": "u771000815",
@@ -3516,7 +3738,7 @@
                                                 }
                                             },
                                             {
-                                                "absolutepath": "Macintosh HD:/Users/juan/Desktop/Max-Sc/Max/drumset_piece/piano/2.wav",
+                                                "absolutepath": "2.wav",
                                                 "filename": "2.wav",
                                                 "filekind": "audiofile",
                                                 "id": "u322000820",
@@ -3526,7 +3748,7 @@
                                                 }
                                             },
                                             {
-                                                "absolutepath": "Macintosh HD:/Users/juan/Desktop/Max-Sc/Max/drumset_piece/piano/3.wav",
+                                                "absolutepath": "3.wav",
                                                 "filename": "3.wav",
                                                 "filekind": "audiofile",
                                                 "id": "u901000825",
@@ -3536,7 +3758,7 @@
                                                 }
                                             },
                                             {
-                                                "absolutepath": "Macintosh HD:/Users/juan/Desktop/Max-Sc/Max/drumset_piece/piano/4.wav",
+                                                "absolutepath": "4.wav",
                                                 "filename": "4.wav",
                                                 "filekind": "audiofile",
                                                 "id": "u821000830",
@@ -3546,7 +3768,7 @@
                                                 }
                                             },
                                             {
-                                                "absolutepath": "Macintosh HD:/Users/juan/Desktop/Max-Sc/Max/drumset_piece/piano/5.aif",
+                                                "absolutepath": "5.aif",
                                                 "filename": "5.aif",
                                                 "filekind": "audiofile",
                                                 "id": "u962000835",
@@ -3556,7 +3778,7 @@
                                                 }
                                             },
                                             {
-                                                "absolutepath": "Macintosh HD:/Users/juan/Desktop/Max-Sc/Max/drumset_piece/piano/6.aif",
+                                                "absolutepath": "6.aif",
                                                 "filename": "6.aif",
                                                 "filekind": "audiofile",
                                                 "id": "u672000840",
@@ -3566,7 +3788,7 @@
                                                 }
                                             },
                                             {
-                                                "absolutepath": "Macintosh HD:/Users/juan/Desktop/Max-Sc/Max/drumset_piece/piano/7.aif",
+                                                "absolutepath": "7.aif",
                                                 "filename": "7.aif",
                                                 "filekind": "audiofile",
                                                 "id": "u085000845",
@@ -3576,10 +3798,170 @@
                                                 }
                                             },
                                             {
-                                                "absolutepath": "Macintosh HD:/Users/juan/Desktop/Max-Sc/Max/drumset_piece/piano/8.aif",
+                                                "absolutepath": "8.aif",
                                                 "filename": "8.aif",
                                                 "filekind": "audiofile",
                                                 "id": "u686000850",
+                                                "loop": 0,
+                                                "content_state": {
+                                                    "pitchshift": 1
+                                                }
+                                            },
+                                            {
+                                                "absolutepath": "1.wav",
+                                                "filename": "1.wav",
+                                                "filekind": "audiofile",
+                                                "id": "u681000866",
+                                                "loop": 0,
+                                                "content_state": {
+                                                    "pitchshift": 1
+                                                }
+                                            },
+                                            {
+                                                "absolutepath": "2.wav",
+                                                "filename": "2.wav",
+                                                "filekind": "audiofile",
+                                                "id": "u955000871",
+                                                "loop": 0,
+                                                "content_state": {
+                                                    "pitchshift": 1
+                                                }
+                                            },
+                                            {
+                                                "absolutepath": "3.wav",
+                                                "filename": "3.wav",
+                                                "filekind": "audiofile",
+                                                "id": "u302000876",
+                                                "loop": 0,
+                                                "content_state": {
+                                                    "pitchshift": 1
+                                                }
+                                            },
+                                            {
+                                                "absolutepath": "4.wav",
+                                                "filename": "4.wav",
+                                                "filekind": "audiofile",
+                                                "id": "u693000881",
+                                                "loop": 0,
+                                                "content_state": {
+                                                    "pitchshift": 1
+                                                }
+                                            },
+                                            {
+                                                "absolutepath": "5.aif",
+                                                "filename": "5.aif",
+                                                "filekind": "audiofile",
+                                                "id": "u390000886",
+                                                "loop": 0,
+                                                "content_state": {
+                                                    "pitchshift": 1
+                                                }
+                                            },
+                                            {
+                                                "absolutepath": "6.aif",
+                                                "filename": "6.aif",
+                                                "filekind": "audiofile",
+                                                "id": "u973000891",
+                                                "loop": 0,
+                                                "content_state": {
+                                                    "pitchshift": 1
+                                                }
+                                            },
+                                            {
+                                                "absolutepath": "7.aif",
+                                                "filename": "7.aif",
+                                                "filekind": "audiofile",
+                                                "id": "u786000896",
+                                                "loop": 0,
+                                                "content_state": {
+                                                    "pitchshift": 1
+                                                }
+                                            },
+                                            {
+                                                "absolutepath": "8.aif",
+                                                "filename": "8.aif",
+                                                "filekind": "audiofile",
+                                                "id": "u765000901",
+                                                "loop": 0,
+                                                "content_state": {
+                                                    "pitchshift": 1
+                                                }
+                                            },
+                                            {
+                                                "absolutepath": "Macintosh HD:/Users/juan/Desktop/Max-Sc/Max/drumset_piece/piano/1.wav",
+                                                "filename": "1.wav",
+                                                "filekind": "audiofile",
+                                                "id": "u377000955",
+                                                "loop": 0,
+                                                "content_state": {
+                                                    "pitchshift": 1
+                                                }
+                                            },
+                                            {
+                                                "absolutepath": "Macintosh HD:/Users/juan/Desktop/Max-Sc/Max/drumset_piece/piano/2.wav",
+                                                "filename": "2.wav",
+                                                "filekind": "audiofile",
+                                                "id": "u472000960",
+                                                "loop": 0,
+                                                "content_state": {
+                                                    "pitchshift": 1
+                                                }
+                                            },
+                                            {
+                                                "absolutepath": "Macintosh HD:/Users/juan/Desktop/Max-Sc/Max/drumset_piece/piano/3.wav",
+                                                "filename": "3.wav",
+                                                "filekind": "audiofile",
+                                                "id": "u577000965",
+                                                "loop": 0,
+                                                "content_state": {
+                                                    "pitchshift": 1
+                                                }
+                                            },
+                                            {
+                                                "absolutepath": "Macintosh HD:/Users/juan/Desktop/Max-Sc/Max/drumset_piece/piano/4.wav",
+                                                "filename": "4.wav",
+                                                "filekind": "audiofile",
+                                                "id": "u792000970",
+                                                "loop": 0,
+                                                "content_state": {
+                                                    "pitchshift": 1
+                                                }
+                                            },
+                                            {
+                                                "absolutepath": "Macintosh HD:/Users/juan/Desktop/Max-Sc/Max/drumset_piece/piano/5.aif",
+                                                "filename": "5.aif",
+                                                "filekind": "audiofile",
+                                                "id": "u435000975",
+                                                "loop": 0,
+                                                "content_state": {
+                                                    "pitchshift": 1
+                                                }
+                                            },
+                                            {
+                                                "absolutepath": "Macintosh HD:/Users/juan/Desktop/Max-Sc/Max/drumset_piece/piano/6.aif",
+                                                "filename": "6.aif",
+                                                "filekind": "audiofile",
+                                                "id": "u752000980",
+                                                "loop": 0,
+                                                "content_state": {
+                                                    "pitchshift": 1
+                                                }
+                                            },
+                                            {
+                                                "absolutepath": "Macintosh HD:/Users/juan/Desktop/Max-Sc/Max/drumset_piece/piano/7.aif",
+                                                "filename": "7.aif",
+                                                "filekind": "audiofile",
+                                                "id": "u552000985",
+                                                "loop": 0,
+                                                "content_state": {
+                                                    "pitchshift": 1
+                                                }
+                                            },
+                                            {
+                                                "absolutepath": "Macintosh HD:/Users/juan/Desktop/Max-Sc/Max/drumset_piece/piano/8.aif",
+                                                "filename": "8.aif",
+                                                "filekind": "audiofile",
+                                                "id": "u033000990",
                                                 "loop": 0,
                                                 "content_state": {
                                                     "pitchshift": 1
@@ -4457,7 +4839,6 @@
             {
                 "box": {
                     "id": "obj-37",
-                    "int": 1,
                     "maxclass": "gswitch2",
                     "numinlets": 2,
                     "numoutlets": 2,
@@ -4575,7 +4956,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 3,
+                            "revision": 4,
                             "architecture": "x64",
                             "modernui": 1
                         },
@@ -4780,7 +5161,7 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 3,
+                            "revision": 4,
                             "architecture": "x64",
                             "modernui": 1
                         },
