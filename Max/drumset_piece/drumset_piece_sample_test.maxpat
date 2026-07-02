@@ -13,239 +13,12 @@
         "boxes": [
             {
                 "box": {
-                    "id": "obj-4",
-                    "maxclass": "newobj",
-                    "numinlets": 0,
-                    "numoutlets": 0,
-                    "patcher": {
-                        "fileversion": 1,
-                        "appversion": {
-                            "major": 9,
-                            "minor": 1,
-                            "revision": 4,
-                            "architecture": "x64",
-                            "modernui": 1
-                        },
-                        "classnamespace": "box",
-                        "rect": [ 59.0, 106.0, 1000.0, 632.0 ],
-                        "visible": 1,
-                        "boxes": [
-                            {
-                                "box": {
-                                    "id": "obj-1",
-                                    "maxclass": "newobj",
-                                    "numinlets": 1,
-                                    "numoutlets": 1,
-                                    "outlettype": [ "bang" ],
-                                    "patching_rect": [ 580.0, 431.0, 58.0, 22.0 ],
-                                    "text": "loadbang"
-                                }
-                            },
-                            {
-                                "box": {
-                                    "id": "obj-29",
-                                    "maxclass": "newobj",
-                                    "numinlets": 2,
-                                    "numoutlets": 2,
-                                    "outlettype": [ "bang", "" ],
-                                    "patching_rect": [ 290.0, 354.0, 46.0, 22.0 ],
-                                    "text": "sel 112"
-                                }
-                            },
-                            {
-                                "box": {
-                                    "id": "obj-26",
-                                    "maxclass": "newobj",
-                                    "numinlets": 0,
-                                    "numoutlets": 4,
-                                    "outlettype": [ "int", "int", "int", "int" ],
-                                    "patching_rect": [ 259.0, 265.0, 50.5, 22.0 ],
-                                    "text": "key"
-                                }
-                            },
-                            {
-                                "box": {
-                                    "attr": "border",
-                                    "id": "obj-25",
-                                    "maxclass": "attrui",
-                                    "numinlets": 1,
-                                    "numoutlets": 1,
-                                    "outlettype": [ "" ],
-                                    "parameter_enable": 0,
-                                    "patching_rect": [ 726.0, 416.0, 150.0, 22.0 ]
-                                }
-                            },
-                            {
-                                "box": {
-                                    "id": "obj-24",
-                                    "maxclass": "toggle",
-                                    "numinlets": 1,
-                                    "numoutlets": 1,
-                                    "outlettype": [ "int" ],
-                                    "parameter_enable": 0,
-                                    "patching_rect": [ 597.0, 465.0, 24.0, 24.0 ]
-                                }
-                            },
-                            {
-                                "box": {
-                                    "id": "obj-38",
-                                    "maxclass": "playbar",
-                                    "numinlets": 1,
-                                    "numoutlets": 2,
-                                    "outlettype": [ "", "int" ],
-                                    "patching_rect": [ 397.0, 220.0, 389.0, 21.0 ]
-                                }
-                            },
-                            {
-                                "box": {
-                                    "attr": "automatic",
-                                    "id": "obj-14",
-                                    "maxclass": "attrui",
-                                    "numinlets": 1,
-                                    "numoutlets": 1,
-                                    "outlettype": [ "" ],
-                                    "parameter_enable": 0,
-                                    "patching_rect": [ 687.0, 265.0, 109.0, 22.0 ],
-                                    "text_width": 83.0
-                                }
-                            },
-                            {
-                                "box": {
-                                    "id": "obj-22",
-                                    "maxclass": "newobj",
-                                    "numinlets": 1,
-                                    "numoutlets": 3,
-                                    "outlettype": [ "jit_matrix", "bang", "" ],
-                                    "patching_rect": [ 645.0, 480.0, 49.0, 22.0 ],
-                                    "text": "jit.world"
-                                }
-                            },
-                            {
-                                "box": {
-                                    "id": "obj-21",
-                                    "maxclass": "message",
-                                    "numinlets": 2,
-                                    "numoutlets": 1,
-                                    "outlettype": [ "" ],
-                                    "patching_rect": [ 726.0, 325.0, 31.0, 22.0 ],
-                                    "text": "stop"
-                                }
-                            },
-                            {
-                                "box": {
-                                    "id": "obj-18",
-                                    "maxclass": "message",
-                                    "numinlets": 2,
-                                    "numoutlets": 1,
-                                    "outlettype": [ "" ],
-                                    "patching_rect": [ 474.0, 365.0, 32.0, 22.0 ],
-                                    "text": "start"
-                                }
-                            },
-                            {
-                                "box": {
-                                    "id": "obj-16",
-                                    "maxclass": "message",
-                                    "numinlets": 2,
-                                    "numoutlets": 1,
-                                    "outlettype": [ "" ],
-                                    "patching_rect": [ 534.0, 349.0, 33.0, 22.0 ],
-                                    "text": "read"
-                                }
-                            },
-                            {
-                                "box": {
-                                    "id": "obj-9",
-                                    "maxclass": "newobj",
-                                    "numinlets": 1,
-                                    "numoutlets": 2,
-                                    "outlettype": [ "jit_gl_texture", "" ],
-                                    "patching_rect": [ 645.0, 387.0, 65.0, 22.0 ],
-                                    "text": "jit.gl.movie"
-                                }
-                            }
-                        ],
-                        "lines": [
-                            {
-                                "patchline": {
-                                    "destination": [ "obj-24", 0 ],
-                                    "source": [ "obj-1", 0 ]
-                                }
-                            },
-                            {
-                                "patchline": {
-                                    "destination": [ "obj-9", 0 ],
-                                    "source": [ "obj-14", 0 ]
-                                }
-                            },
-                            {
-                                "patchline": {
-                                    "destination": [ "obj-9", 0 ],
-                                    "source": [ "obj-16", 0 ]
-                                }
-                            },
-                            {
-                                "patchline": {
-                                    "destination": [ "obj-9", 0 ],
-                                    "source": [ "obj-18", 0 ]
-                                }
-                            },
-                            {
-                                "patchline": {
-                                    "destination": [ "obj-9", 0 ],
-                                    "source": [ "obj-21", 0 ]
-                                }
-                            },
-                            {
-                                "patchline": {
-                                    "destination": [ "obj-22", 0 ],
-                                    "source": [ "obj-24", 0 ]
-                                }
-                            },
-                            {
-                                "patchline": {
-                                    "destination": [ "obj-22", 0 ],
-                                    "source": [ "obj-25", 0 ]
-                                }
-                            },
-                            {
-                                "patchline": {
-                                    "destination": [ "obj-29", 0 ],
-                                    "source": [ "obj-26", 0 ]
-                                }
-                            },
-                            {
-                                "patchline": {
-                                    "destination": [ "obj-18", 0 ],
-                                    "source": [ "obj-29", 0 ]
-                                }
-                            },
-                            {
-                                "patchline": {
-                                    "destination": [ "obj-9", 0 ],
-                                    "source": [ "obj-38", 0 ]
-                                }
-                            },
-                            {
-                                "patchline": {
-                                    "destination": [ "obj-22", 0 ],
-                                    "source": [ "obj-9", 0 ]
-                                }
-                            }
-                        ]
-                    },
-                    "patching_rect": [ 1173.0, 102.0, 91.0, 22.0 ],
-                    "text": "p rodney_video"
-                }
-            },
-            {
-                "box": {
                     "fontsize": 30.0,
                     "id": "obj-132",
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 997.0, 590.0, 224.0, 40.0 ],
+                    "patching_rect": [ 997.0, 590.0, 224.0, 41.0 ],
                     "text": "SECTION 2 & 3"
                 }
             },
@@ -621,7 +394,7 @@
                     "patching_rect": [ 1157.0, 651.0, 111.0, 22.0 ],
                     "presentation": 1,
                     "presentation_linecount": 3,
-                    "presentation_rect": [ 1967.0, 943.0, 100.0, 49.0 ],
+                    "presentation_rect": [ 1967.0, 943.0, 100.0, 50.0 ],
                     "text": "p section_3_trigger"
                 }
             },
@@ -1013,7 +786,7 @@
                     "patching_rect": [ 446.0, 664.0, 111.0, 22.0 ],
                     "presentation": 1,
                     "presentation_linecount": 3,
-                    "presentation_rect": [ 1924.0, 980.0, 100.0, 49.0 ],
+                    "presentation_rect": [ 1924.0, 980.0, 100.0, 50.0 ],
                     "text": "p section_2_trigger"
                 }
             },
@@ -1153,7 +926,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 330.0, 590.0, 177.0, 40.0 ],
+                    "patching_rect": [ 330.0, 590.0, 177.0, 41.0 ],
                     "text": "SECTION 1"
                 }
             },
@@ -1583,7 +1356,7 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 1049.0, 389.0, 121.0, 34.0 ],
+                                    "patching_rect": [ 1049.0, 389.0, 121.0, 35.0 ],
                                     "text": "CAMERA"
                                 }
                             },
@@ -1594,7 +1367,7 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 461.5, 389.0, 96.0, 34.0 ],
+                                    "patching_rect": [ 461.5, 389.0, 96.0, 35.0 ],
                                     "text": "REELS"
                                 }
                             },
@@ -2206,7 +1979,7 @@
                             {
                                 "box": {
                                     "id": "obj-39",
-                                    "items": [ "FaceTime HD Camera", ",", "juan_phone Camera" ],
+                                    "items": "USB2.0 VGA UVC WebCam",
                                     "maxclass": "umenu",
                                     "numinlets": 1,
                                     "numoutlets": 3,
@@ -2680,7 +2453,7 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 536.0, 52.0, 74.0, 33.0 ],
+                                    "patching_rect": [ 536.0, 52.0, 74.0, 34.0 ],
                                     "text": "trigger clip again"
                                 }
                             },
@@ -2725,7 +2498,7 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 389.0, 45.0, 74.0, 33.0 ],
+                                    "patching_rect": [ 389.0, 45.0, 74.0, 34.0 ],
                                     "text": "trigger next clip"
                                 }
                             },
@@ -3270,7 +3043,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 83.0, 263.0, 150.0, 234.0 ],
+                    "patching_rect": [ 83.0, 263.0, 150.0, 241.0 ],
                     "text": "Order\n\nSection 1:\n\n1. Groove\n2. Stops (3)\n3.  build up\n\nSection 2: \n\n1. free\n2. buildup\n\nSection 3:\n\n1. Build down\n2. Crumble"
                 }
             },
@@ -3628,6 +3401,7 @@
                                                 "filename": "1.wav",
                                                 "filekind": "audiofile",
                                                 "id": "u299006488",
+                                                "selection": [ 0.0, 1.0 ],
                                                 "loop": 0,
                                                 "content_state": {
                                                     "timestretch": 1,
@@ -3641,6 +3415,7 @@
                                                 "filename": "2.wav",
                                                 "filekind": "audiofile",
                                                 "id": "u752006493",
+                                                "selection": [ 0.0, 1.0 ],
                                                 "loop": 0,
                                                 "content_state": {
                                                     "timestretch": 1,
@@ -3654,6 +3429,7 @@
                                                 "filename": "3.wav",
                                                 "filekind": "audiofile",
                                                 "id": "u797012190",
+                                                "selection": [ 0.0, 1.0 ],
                                                 "loop": 0,
                                                 "content_state": {
                                                     "timestretch": 1,
@@ -3667,6 +3443,7 @@
                                                 "filename": "4.wav",
                                                 "filekind": "audiofile",
                                                 "id": "u863012195",
+                                                "selection": [ 0.0, 1.0 ],
                                                 "loop": 0,
                                                 "content_state": {
                                                     "timestretch": 1,
@@ -3680,6 +3457,7 @@
                                                 "filename": "5.aif",
                                                 "filekind": "audiofile",
                                                 "id": "u643012200",
+                                                "selection": [ 0.0, 1.0 ],
                                                 "loop": 0,
                                                 "content_state": {
                                                     "timestretch": 1,
@@ -3693,6 +3471,7 @@
                                                 "filename": "6.aif",
                                                 "filekind": "audiofile",
                                                 "id": "u596012205",
+                                                "selection": [ 0.0, 1.0 ],
                                                 "loop": 0,
                                                 "content_state": {
                                                     "timestretch": 1,
@@ -3706,6 +3485,7 @@
                                                 "filename": "7.aif",
                                                 "filekind": "audiofile",
                                                 "id": "u806012210",
+                                                "selection": [ 0.0, 1.0 ],
                                                 "loop": 0,
                                                 "content_state": {
                                                     "timestretch": 1,
@@ -3719,6 +3499,7 @@
                                                 "filename": "8.aif",
                                                 "filekind": "audiofile",
                                                 "id": "u475012215",
+                                                "selection": [ 0.0, 1.0 ],
                                                 "loop": 0,
                                                 "content_state": {
                                                     "timestretch": 1,
@@ -3732,6 +3513,7 @@
                                                 "filename": "1.wav",
                                                 "filekind": "audiofile",
                                                 "id": "u771000815",
+                                                "selection": [ 0.0, 1.0 ],
                                                 "loop": 0,
                                                 "content_state": {
                                                     "pitchshift": 1
@@ -3742,6 +3524,7 @@
                                                 "filename": "2.wav",
                                                 "filekind": "audiofile",
                                                 "id": "u322000820",
+                                                "selection": [ 0.0, 1.0 ],
                                                 "loop": 0,
                                                 "content_state": {
                                                     "pitchshift": 1
@@ -3752,6 +3535,7 @@
                                                 "filename": "3.wav",
                                                 "filekind": "audiofile",
                                                 "id": "u901000825",
+                                                "selection": [ 0.0, 1.0 ],
                                                 "loop": 0,
                                                 "content_state": {
                                                     "pitchshift": 1
@@ -3762,6 +3546,7 @@
                                                 "filename": "4.wav",
                                                 "filekind": "audiofile",
                                                 "id": "u821000830",
+                                                "selection": [ 0.0, 1.0 ],
                                                 "loop": 0,
                                                 "content_state": {
                                                     "pitchshift": 1
@@ -3772,6 +3557,7 @@
                                                 "filename": "5.aif",
                                                 "filekind": "audiofile",
                                                 "id": "u962000835",
+                                                "selection": [ 0.0, 1.0 ],
                                                 "loop": 0,
                                                 "content_state": {
                                                     "pitchshift": 1
@@ -3782,6 +3568,7 @@
                                                 "filename": "6.aif",
                                                 "filekind": "audiofile",
                                                 "id": "u672000840",
+                                                "selection": [ 0.0, 1.0 ],
                                                 "loop": 0,
                                                 "content_state": {
                                                     "pitchshift": 1
@@ -3792,6 +3579,7 @@
                                                 "filename": "7.aif",
                                                 "filekind": "audiofile",
                                                 "id": "u085000845",
+                                                "selection": [ 0.0, 1.0 ],
                                                 "loop": 0,
                                                 "content_state": {
                                                     "pitchshift": 1
@@ -3802,6 +3590,7 @@
                                                 "filename": "8.aif",
                                                 "filekind": "audiofile",
                                                 "id": "u686000850",
+                                                "selection": [ 0.0, 1.0 ],
                                                 "loop": 0,
                                                 "content_state": {
                                                     "pitchshift": 1
@@ -3812,6 +3601,7 @@
                                                 "filename": "1.wav",
                                                 "filekind": "audiofile",
                                                 "id": "u681000866",
+                                                "selection": [ 0.0, 1.0 ],
                                                 "loop": 0,
                                                 "content_state": {
                                                     "pitchshift": 1
@@ -3822,6 +3612,7 @@
                                                 "filename": "2.wav",
                                                 "filekind": "audiofile",
                                                 "id": "u955000871",
+                                                "selection": [ 0.0, 1.0 ],
                                                 "loop": 0,
                                                 "content_state": {
                                                     "pitchshift": 1
@@ -3832,6 +3623,7 @@
                                                 "filename": "3.wav",
                                                 "filekind": "audiofile",
                                                 "id": "u302000876",
+                                                "selection": [ 0.0, 1.0 ],
                                                 "loop": 0,
                                                 "content_state": {
                                                     "pitchshift": 1
@@ -3842,6 +3634,7 @@
                                                 "filename": "4.wav",
                                                 "filekind": "audiofile",
                                                 "id": "u693000881",
+                                                "selection": [ 0.0, 1.0 ],
                                                 "loop": 0,
                                                 "content_state": {
                                                     "pitchshift": 1
@@ -3852,6 +3645,7 @@
                                                 "filename": "5.aif",
                                                 "filekind": "audiofile",
                                                 "id": "u390000886",
+                                                "selection": [ 0.0, 1.0 ],
                                                 "loop": 0,
                                                 "content_state": {
                                                     "pitchshift": 1
@@ -3862,6 +3656,7 @@
                                                 "filename": "6.aif",
                                                 "filekind": "audiofile",
                                                 "id": "u973000891",
+                                                "selection": [ 0.0, 1.0 ],
                                                 "loop": 0,
                                                 "content_state": {
                                                     "pitchshift": 1
@@ -3872,6 +3667,7 @@
                                                 "filename": "7.aif",
                                                 "filekind": "audiofile",
                                                 "id": "u786000896",
+                                                "selection": [ 0.0, 1.0 ],
                                                 "loop": 0,
                                                 "content_state": {
                                                     "pitchshift": 1
@@ -3882,6 +3678,7 @@
                                                 "filename": "8.aif",
                                                 "filekind": "audiofile",
                                                 "id": "u765000901",
+                                                "selection": [ 0.0, 1.0 ],
                                                 "loop": 0,
                                                 "content_state": {
                                                     "pitchshift": 1
@@ -3892,6 +3689,7 @@
                                                 "filename": "1.wav",
                                                 "filekind": "audiofile",
                                                 "id": "u377000955",
+                                                "selection": [ 0.0, 1.0 ],
                                                 "loop": 0,
                                                 "content_state": {
                                                     "pitchshift": 1
@@ -3902,6 +3700,7 @@
                                                 "filename": "2.wav",
                                                 "filekind": "audiofile",
                                                 "id": "u472000960",
+                                                "selection": [ 0.0, 1.0 ],
                                                 "loop": 0,
                                                 "content_state": {
                                                     "pitchshift": 1
@@ -3912,6 +3711,7 @@
                                                 "filename": "3.wav",
                                                 "filekind": "audiofile",
                                                 "id": "u577000965",
+                                                "selection": [ 0.0, 1.0 ],
                                                 "loop": 0,
                                                 "content_state": {
                                                     "pitchshift": 1
@@ -3922,6 +3722,7 @@
                                                 "filename": "4.wav",
                                                 "filekind": "audiofile",
                                                 "id": "u792000970",
+                                                "selection": [ 0.0, 1.0 ],
                                                 "loop": 0,
                                                 "content_state": {
                                                     "pitchshift": 1
@@ -3932,6 +3733,7 @@
                                                 "filename": "5.aif",
                                                 "filekind": "audiofile",
                                                 "id": "u435000975",
+                                                "selection": [ 0.0, 1.0 ],
                                                 "loop": 0,
                                                 "content_state": {
                                                     "pitchshift": 1
@@ -3942,6 +3744,7 @@
                                                 "filename": "6.aif",
                                                 "filekind": "audiofile",
                                                 "id": "u752000980",
+                                                "selection": [ 0.0, 1.0 ],
                                                 "loop": 0,
                                                 "content_state": {
                                                     "pitchshift": 1
@@ -3952,6 +3755,7 @@
                                                 "filename": "7.aif",
                                                 "filekind": "audiofile",
                                                 "id": "u552000985",
+                                                "selection": [ 0.0, 1.0 ],
                                                 "loop": 0,
                                                 "content_state": {
                                                     "pitchshift": 1
@@ -3962,6 +3766,7 @@
                                                 "filename": "8.aif",
                                                 "filekind": "audiofile",
                                                 "id": "u033000990",
+                                                "selection": [ 0.0, 1.0 ],
                                                 "loop": 0,
                                                 "content_state": {
                                                     "pitchshift": 1
@@ -5349,7 +5154,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 19.0, 19.0, 186.17021143436432, 74.0 ],
+                    "patching_rect": [ 19.0, 19.0, 186.17021143436432, 75.0 ],
                     "text": "Juan Diego Mora\n09/13/2025\nFreedom for Oneself\n\nfor Rodney Clark"
                 }
             }
