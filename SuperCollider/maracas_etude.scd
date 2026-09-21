@@ -8,10 +8,11 @@
 
 s.options.numInputBusChannels = 0;
 s.options.numOutputBusChannels = ~numOfSpeakers;
-Server.default.options.outDevice = "Built-in Output"; //output device
+Server.default.options.outDevice = "ArcWave 2"; //output device
 s.reboot;
 s.meter;
 s.plotTree;
+
 
 
 
@@ -56,8 +57,8 @@ SynthDef.new("drone", {
 	sigList = Array.new(~numOfSpeakers);
 	env = Env.adsr(5, 0.01, 1, 10);
 	env = EnvGen.ar(env, gate, doneAction: 2);
-	sig = LFSaw.ar(36.midicps, mul: 0.15);
-	sig = sig + LFSaw.ar(24.midicps, mul: 0.05);
+	sig = LFSaw.ar(53.midicps, mul: 0.15);
+	sig = sig + LFSaw.ar(41.midicps, mul: 0.05);
 	sig = LPF.ar(sig, 100);
 	//sig = sig.dup;
 	sig = sig * env;
@@ -75,8 +76,8 @@ SynthDef.new("drone2", {
 	sigList = Array.new(~numOfSpeakers);
 	env = Env.adsr(0.1, 0.01, 1, 15);
 	env = EnvGen.ar(env, gate, doneAction: 2);
-	sig = LFSaw.ar(24.midicps, mul: 0.15);
-	sig = sig + LFSaw.ar(31.midicps, mul: 0.15);
+	sig = LFSaw.ar(41.midicps, mul: 0.15);
+	sig = sig + LFSaw.ar(48.midicps, mul: 0.15);
 	sig = LPF.ar(sig, 100);
 	//sig = sig.dup;
 	sig = sig * env;
@@ -91,7 +92,7 @@ SynthDef.new("drone2", {
 r = Routine.new({
 	c = Array.series((~numOfSpeakers), 0, 1);              //channel
 	inf.do({
-		x = [59, 60, 62, 64, 65, 67, 69].choose;           //notes
+		x = [64, 65, 67, 69, 70, 72, 74, 76].choose;           //notes
 		y = rrand(0.25, 2);                                //yield time (time between each note)
 		z = [rrand(0.5, 5), rrand(0.5, 5), rrand(0.5, 5)]; //envelope
 		j = rrand(0.01, 0.05);                             //amp
@@ -141,6 +142,7 @@ p = Routine.new({
 
 k = Routine.new({
 	~drone = Synth.new("drone"); //1 - Chords
+	~drone.set(\note, 53);
 	r.reset; // notes
 	r.play;
 
@@ -168,7 +170,7 @@ k = Routine.new({
 	});
 
 	~drone2 = Synth.new("drone2");//4 - Chords and Bass and Noise
-
+	~drone2.set(\note, 53);
 	p.reset;
 	p.play;
 
@@ -229,5 +231,8 @@ SynthDef.new(\check, {
 )
 
 ~checkSpeakers = Synth.new("check");
+
+~drone = Synth.new("drone"); //1 - Chords
+~drone.set(\note, 53);
 
 {SinOsc.ar(400, mul: 0.1)}.play;
