@@ -155,13 +155,12 @@
             {
                 "box": {
                     "id": "obj-129",
-                    "linecount": 2,
                     "maxclass": "message",
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 806.3157269954681, 856.8420388698578, 96.0, 35.0 ],
-                    "text": "0, 1 2 1 2415 0 2"
+                    "patching_rect": [ 806.3157269954681, 856.8420388698578, 96.0, 22.0 ],
+                    "text": "0, 1 2 1 714 0 2"
                 }
             },
             {
