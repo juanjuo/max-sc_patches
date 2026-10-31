@@ -9,8 +9,19 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 327.0, 104.0, 1433.0, 834.0 ],
+        "rect": [ 34.0, 87.0, 1372.0, 694.0 ],
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-36",
+                    "linecount": 3,
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 1179.75, 640.554054054054, 150.0, 47.0 ],
+                    "text": "do I need to extend the beat for numbers greater than 4??"
+                }
+            },
             {
                 "box": {
                     "id": "obj-122",
@@ -29,7 +40,6 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 861.1891891891892, 402.7207207207207, 150.0, 33.0 ],
-                    "presentation_linecount": 2,
                     "text": "millisecond per beat (for clickling)"
                 }
             },
@@ -76,7 +86,6 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 1325.0, 211.9099099099099, 283.7837837837838, 74.0 ],
-                    "presentation_linecount": 2,
                     "text": "PERFORMANCE TOOLS"
                 }
             },
@@ -763,7 +772,7 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 219.0, 166.0, 1000.0, 687.0 ],
+                        "rect": [ 219.0, 94.0, 1000.0, 687.0 ],
                         "visible": 1,
                         "boxes": [
                             {
@@ -2740,6 +2749,7 @@
             {
                 "box": {
                     "buffername": "loopBuffer",
+                    "chanoffset": 0,
                     "id": "obj-30",
                     "maxclass": "waveform~",
                     "numinlets": 5,
@@ -3928,13 +3938,12 @@
             {
                 "box": {
                     "id": "obj-129",
-                    "linecount": 2,
                     "maxclass": "message",
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 284.7457627118644, 1188.6949152542372, 96.0, 35.0 ],
-                    "text": "0, 1 2 1 1437 0 2"
+                    "patching_rect": [ 284.7457627118644, 1188.6949152542372, 96.0, 22.0 ],
+                    "text": "0, 1 2 1 704 0 2"
                 }
             },
             {
