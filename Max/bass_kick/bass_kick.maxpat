@@ -3,8 +3,8 @@
         "fileversion": 1,
         "appversion": {
             "major": 9,
-            "minor": 1,
-            "revision": 4,
+            "minor": 2,
+            "revision": 0,
             "architecture": "x64",
             "modernui": 1
         },
@@ -13,12 +13,12 @@
         "boxes": [
             {
                 "box": {
-                    "id": "obj-32",
+                    "id": "obj-14",
                     "maxclass": "newobj",
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "int" ],
-                    "patching_rect": [ 536.0, 547.0, 32.0, 22.0 ],
+                    "patching_rect": [ 534.0, 545.0, 32.0, 22.0 ],
                     "text": "+ 12"
                 }
             },
@@ -271,7 +271,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 438.0, 165.0, 45.0, 22.0 ],
-                    "text": "set 1 1"
+                    "text": "set 1 2"
                 }
             },
             {
@@ -359,8 +359,8 @@
                     "numinlets": 3,
                     "numoutlets": 2,
                     "outlettype": [ "float", "float" ],
-                    "patching_rect": [ 485.8695559501648, 693.4782476425171, 121.0, 22.0 ],
-                    "text": "makenote 127 10000"
+                    "patching_rect": [ 485.8695559501648, 693.4782476425171, 115.0, 22.0 ],
+                    "text": "makenote 127 5000"
                 }
             },
             {
@@ -412,6 +412,12 @@
                 "patchline": {
                     "destination": [ "obj-15", 0 ],
                     "source": [ "obj-13", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-18", 1 ],
+                    "source": [ "obj-14", 0 ]
                 }
             },
             {
@@ -510,12 +516,6 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-18", 1 ],
-                    "source": [ "obj-32", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-35", 0 ],
                     "order": 0,
                     "source": [ "obj-33", 0 ]
@@ -548,7 +548,7 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-32", 0 ],
+                    "destination": [ "obj-14", 0 ],
                     "source": [ "obj-4", 0 ]
                 }
             },
