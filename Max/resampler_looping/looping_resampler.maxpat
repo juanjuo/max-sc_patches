@@ -9,8 +9,19 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 34.0, 87.0, 1372.0, 694.0 ],
+        "rect": [ 45.0, 95.0, 1433.0, 763.0 ],
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-11",
+                    "linecount": 12,
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 1522.0, 1072.0, 150.0, 167.0 ],
+                    "text": "REFACTOR PLAN!\n\nSPLITTING STAGE -\n\nDo all splitting at once, save in a coll\n\nTRIGGERING STAGE -\n\nMake a bigger range and more flexible gradient with easing"
+                }
+            },
             {
                 "box": {
                     "id": "obj-172",
@@ -29,7 +40,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 1483.6206896551726, 925.0000000000001, 150.0, 167.0 ],
+                    "patching_rect": [ 1522.0, 865.6803874092009, 150.0, 167.0 ],
                     "text": "TO FIX:\n\nCorrect numbre of divisions\n\nBass with maybe more control?\n\nlook more into the gradients!!! between presets (number selection)"
                 }
             },
@@ -3111,6 +3122,7 @@
             {
                 "box": {
                     "buffername": "loopBuffer",
+                    "chanoffset": 0,
                     "id": "obj-30",
                     "maxclass": "waveform~",
                     "numinlets": 5,
